@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 22
+Sheet 2 21
 Title ""
 Date ""
 Rev ""
@@ -50,7 +49,7 @@ AR Path="/5E6222E7/5E632D03" Ref="R?"  Part="1"
 AR Path="/5E62FD4D/5E632D03" Ref="R1"  Part="1" 
 F 0 "R1" H 2720 2196 50  0000 L CNN
 F 1 "Pull" H 2720 2105 50  0000 L CNN
-F 2 "" V 2580 2150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 2150 50  0001 C CNN
 F 3 "~" H 2650 2150 50  0001 C CNN
 	1    2650 2150
 	1    0    0    -1  
@@ -63,7 +62,7 @@ AR Path="/5E6222E7/5E632D09" Ref="R?"  Part="1"
 AR Path="/5E62FD4D/5E632D09" Ref="R3"  Part="1" 
 F 0 "R3" H 5920 2196 50  0000 L CNN
 F 1 "Pull" H 5920 2105 50  0000 L CNN
-F 2 "" V 5780 2150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 2150 50  0001 C CNN
 F 3 "~" H 5850 2150 50  0001 C CNN
 	1    5850 2150
 	1    0    0    -1  
@@ -102,7 +101,7 @@ AR Path="/5E6222E7/5E63BCC7" Ref="R?"  Part="1"
 AR Path="/5E62FD4D/5E63BCC7" Ref="R2"  Part="1" 
 F 0 "R2" H 2970 3346 50  0000 L CNN
 F 1 "Pull" H 2970 3255 50  0000 L CNN
-F 2 "" V 2830 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 3300 50  0001 C CNN
 F 3 "~" H 2900 3300 50  0001 C CNN
 	1    2900 3300
 	1    0    0    -1  
@@ -115,7 +114,7 @@ AR Path="/5E6222E7/5E63BCCD" Ref="R?"  Part="1"
 AR Path="/5E62FD4D/5E63BCCD" Ref="R4"  Part="1" 
 F 0 "R4" H 6220 3296 50  0000 L CNN
 F 1 "Pull" H 6220 3205 50  0000 L CNN
-F 2 "" V 6080 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 3250 50  0001 C CNN
 F 3 "~" H 6150 3250 50  0001 C CNN
 	1    6150 3250
 	1    0    0    -1  

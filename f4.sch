@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 22 22
+Sheet 21 21
 Title ""
 Date ""
 Rev ""
@@ -42,7 +41,7 @@ AR Path="/5E811168/5E81E95C" Ref="C?"  Part="1"
 AR Path="/5E6933BA/5E81E95C" Ref="C5"  Part="1" 
 F 0 "C5" H 14415 2296 50  0000 L CNN
 F 1 "100n" H 14415 2205 50  0000 L CNN
-F 2 "" H 14338 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14338 2100 50  0001 C CNN
 F 3 "~" H 14300 2250 50  0001 C CNN
 	1    14300 2250
 	1    0    0    -1  
@@ -79,7 +78,7 @@ U 1 1 5E823FD4
 P 13800 2200
 F 0 "SW1" V 13846 2152 50  0000 R CNN
 F 1 "SW_Push" V 13755 2152 50  0000 R CNN
-F 2 "" H 13800 2400 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 13800 2400 50  0001 C CNN
 F 3 "~" H 13800 2400 50  0001 C CNN
 	1    13800 2200
 	0    -1   -1   0   
@@ -190,7 +189,7 @@ U 1 1 5E8F04FC
 P 5350 3200
 F 0 "C10" V 5602 3200 50  0000 C CNN
 F 1 "1µ" V 5511 3200 50  0000 C CNN
-F 2 "" H 5388 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5388 3050 50  0001 C CNN
 F 3 "~" H 5350 3200 50  0001 C CNN
 	1    5350 3200
 	0    -1   -1   0   

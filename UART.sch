@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 22
+Sheet 20 21
 Title ""
 Date ""
 Rev ""
@@ -23,8 +22,8 @@ L Connector_Generic:Conn_01x03 J16
 U 1 1 5E8486F8
 P 5350 2900
 F 0 "J16" H 5430 2942 50  0000 L CNN
-F 1 "Conn_01x03" H 5430 2851 50  0000 L CNN
-F 2 "" H 5350 2900 50  0001 C CNN
+F 1 "comm_f3" H 5430 2851 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 5350 2900 50  0001 C CNN
 F 3 "~" H 5350 2900 50  0001 C CNN
 	1    5350 2900
 	1    0    0    -1  

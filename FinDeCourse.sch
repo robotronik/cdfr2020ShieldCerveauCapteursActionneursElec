@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 19 22
+Sheet 17 21
 Title ""
 Date ""
 Rev ""
@@ -22,9 +21,9 @@ U 1 1 5E7DC2F9
 P 7350 2600
 AR Path="/5E6942FF/5E7DC2F9" Ref="J13"  Part="1" 
 AR Path="/5E69459B/5E7DC2F9" Ref="J14"  Part="1" 
-F 0 "J13" H 7268 2275 50  0000 C CNN
-F 1 "Conn_01x02" H 7268 2366 50  0000 C CNN
-F 2 "" H 7350 2600 50  0001 C CNN
+F 0 "J14" H 7268 2275 50  0000 C CNN
+F 1 "butee" H 7268 2366 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 7350 2600 50  0001 C CNN
 F 3 "~" H 7350 2600 50  0001 C CNN
 	1    7350 2600
 	1    0    0    -1  
@@ -50,9 +49,9 @@ U 1 1 5E835C66
 P 6450 2750
 AR Path="/5E69459B/5E835C66" Ref="C6"  Part="1" 
 AR Path="/5E6942FF/5E835C66" Ref="C7"  Part="1" 
-F 0 "C7" H 6565 2796 50  0000 L CNN
+F 0 "C6" H 6565 2796 50  0000 L CNN
 F 1 "100n" H 6565 2705 50  0000 L CNN
-F 2 "" H 6488 2600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6488 2600 50  0001 C CNN
 F 3 "~" H 6450 2750 50  0001 C CNN
 	1    6450 2750
 	1    0    0    -1  

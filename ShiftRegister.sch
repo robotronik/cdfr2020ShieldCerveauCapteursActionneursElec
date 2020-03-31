@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 22
+Sheet 11 21
 Title ""
 Date ""
 Rev ""
@@ -101,7 +100,7 @@ U 1 1 5E7FC43F
 P 6050 3750
 F 0 "U1" H 6050 4431 50  0000 C CNN
 F 1 "74HC164" H 6050 4340 50  0000 C CNN
-F 2 "" H 6950 3450 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6950 3450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT164.pdf" H 6950 3450 50  0001 C CNN
 	1    6050 3750
 	1    0    0    -1  
@@ -114,7 +113,7 @@ U 1 1 5E832490
 P 6200 3100
 F 0 "C12" V 5948 3100 50  0000 C CNN
 F 1 "100n" V 6039 3100 50  0000 C CNN
-F 2 "" H 6238 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6238 2950 50  0001 C CNN
 F 3 "~" H 6200 3100 50  0001 C CNN
 	1    6200 3100
 	0    1    1    0   

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 22
+Sheet 16 21
 Title ""
 Date ""
 Rev ""
@@ -93,7 +92,7 @@ AR Path="/5E66627C/5E80BDFA" Ref="R?"  Part="1"
 AR Path="/5E6AC71D/5E80BDFA" Ref="R11"  Part="1" 
 F 0 "R11" H 2470 4346 50  0000 L CNN
 F 1 "Pull" H 2470 4255 50  0000 L CNN
-F 2 "" V 2330 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 4300 50  0001 C CNN
 F 3 "~" H 2400 4300 50  0001 C CNN
 	1    2400 4300
 	1    0    0    -1  
@@ -108,7 +107,7 @@ AR Path="/5E66627C/5E80BE00" Ref="R?"  Part="1"
 AR Path="/5E6AC71D/5E80BE00" Ref="R13"  Part="1" 
 F 0 "R13" H 3170 4346 50  0000 L CNN
 F 1 "Pull" H 3170 4255 50  0000 L CNN
-F 2 "" V 3030 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 4300 50  0001 C CNN
 F 3 "~" H 3100 4300 50  0001 C CNN
 	1    3100 4300
 	1    0    0    -1  
@@ -182,7 +181,7 @@ AR Path="/5E66627C/5E8639E8" Ref="R?"  Part="1"
 AR Path="/5E6AC71D/5E8639E8" Ref="R12"  Part="1" 
 F 0 "R12" H 2470 5596 50  0000 L CNN
 F 1 "Pull" H 2470 5505 50  0000 L CNN
-F 2 "" V 2330 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 5550 50  0001 C CNN
 F 3 "~" H 2400 5550 50  0001 C CNN
 	1    2400 5550
 	1    0    0    -1  
@@ -197,7 +196,7 @@ AR Path="/5E66627C/5E8639EE" Ref="R?"  Part="1"
 AR Path="/5E6AC71D/5E8639EE" Ref="R14"  Part="1" 
 F 0 "R14" H 3170 5596 50  0000 L CNN
 F 1 "Pull" H 3170 5505 50  0000 L CNN
-F 2 "" V 3030 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 5550 50  0001 C CNN
 F 3 "~" H 3100 5550 50  0001 C CNN
 	1    3100 5550
 	1    0    0    -1  
@@ -293,7 +292,7 @@ AR Path="/5E6883CB/5E7F198B" Ref="U?"  Part="1"
 AR Path="/5E6AC71D/5E7F198B" Ref="U2"  Part="1" 
 F 0 "U2" H 4400 1992 50  0000 C CNN
 F 1 "LM317_TO3" H 4400 1901 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-3" H 4400 1950 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4400 1950 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 4400 1750 50  0001 C CNN
 	1    4400 1750
 	1    0    0    -1  
@@ -308,8 +307,8 @@ AR Path="/5E686EE6/5E7F1992" Ref="R?"  Part="1"
 AR Path="/5E6883CB/5E7F1992" Ref="R?"  Part="1" 
 AR Path="/5E6AC71D/5E7F1992" Ref="R15"  Part="1" 
 F 0 "R15" V 4743 1750 50  0000 C CNN
-F 1 "R" V 4834 1750 50  0000 C CNN
-F 2 "" V 4880 1750 50  0001 C CNN
+F 1 "1.2" V 4834 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4880 1750 50  0001 C CNN
 F 3 "~" H 4950 1750 50  0001 C CNN
 	1    4950 1750
 	0    1    1    0   
@@ -359,7 +358,7 @@ AR Path="/5E627338/5E83530F" Ref="C?"  Part="1"
 AR Path="/5E6AC71D/5E83530F" Ref="C13"  Part="1" 
 F 0 "C13" V 5598 3500 50  0000 C CNN
 F 1 "100n" V 5689 3500 50  0000 C CNN
-F 2 "" H 5888 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5888 3350 50  0001 C CNN
 F 3 "~" H 5850 3500 50  0001 C CNN
 	1    5850 3500
 	0    -1   -1   0   
@@ -385,7 +384,7 @@ AR Path="/5E627338/5E8363F0" Ref="C?"  Part="1"
 AR Path="/5E6AC71D/5E8363F0" Ref="C14"  Part="1" 
 F 0 "C14" V 6098 3500 50  0000 C CNN
 F 1 "100n" V 6189 3500 50  0000 C CNN
-F 2 "" H 6388 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6388 3350 50  0001 C CNN
 F 3 "~" H 6350 3500 50  0001 C CNN
 	1    6350 3500
 	0    1    1    0   

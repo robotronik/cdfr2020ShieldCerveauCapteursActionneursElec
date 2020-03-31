@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 22
+Sheet 15 21
 Title ""
 Date ""
 Rev ""
@@ -24,9 +23,9 @@ U 1 1 5E6C3064
 P 5450 2600
 AR Path="/5E685B22/5E6C3064" Ref="J12"  Part="1" 
 AR Path="/5E685A03/5E6C3064" Ref="J11"  Part="1" 
-F 0 "J11" H 5530 2592 50  0000 L CNN
-F 1 "Conn_01x02" H 5530 2501 50  0000 L CNN
-F 2 "" H 5450 2600 50  0001 C CNN
+F 0 "J12" H 5530 2592 50  0000 L CNN
+F 1 "Moteur" H 5530 2501 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 5450 2600 50  0001 C CNN
 F 3 "~" H 5450 2600 50  0001 C CNN
 	1    5450 2600
 	1    0    0    -1  

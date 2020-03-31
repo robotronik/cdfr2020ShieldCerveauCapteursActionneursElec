@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:kicad_master-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 21 22
+Sheet 19 21
 Title ""
 Date ""
 Rev ""
@@ -14,84 +13,89 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5000 2650 0    50   Input ~ 0
+Text HLabel 5300 2750 0    50   Input ~ 0
 SPI_MOSI
-Text HLabel 5000 2750 0    50   Input ~ 0
+Text HLabel 6000 2650 2    50   Input ~ 0
 SPI_MISO
-Text HLabel 5000 2850 0    50   Input ~ 0
+Text HLabel 6000 2750 2    50   Input ~ 0
 SPI_CLK
 $Comp
 L power:+5V #PWR0122
 U 1 1 5E8459BC
-P 5000 2450
-F 0 "#PWR0122" H 5000 2300 50  0001 C CNN
-F 1 "+5V" H 5015 2623 50  0000 C CNN
-F 2 "" H 5000 2450 50  0001 C CNN
-F 3 "" H 5000 2450 50  0001 C CNN
-	1    5000 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 5E84620F
-P 5000 3600
-F 0 "#PWR0123" H 5000 3350 50  0001 C CNN
-F 1 "GND" H 5005 3427 50  0000 C CNN
-F 2 "" H 5000 3600 50  0001 C CNN
-F 3 "" H 5000 3600 50  0001 C CNN
-	1    5000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x10 J15
-U 1 1 5E86FCF9
-P 5300 2950
-F 0 "J15" H 5380 2942 50  0000 L CNN
-F 1 "Conn_01x10" H 5380 2851 50  0000 L CNN
-F 2 "" H 5300 2950 50  0001 C CNN
-F 3 "~" H 5300 2950 50  0001 C CNN
-	1    5300 2950
+P 5300 2350
+F 0 "#PWR0122" H 5300 2200 50  0001 C CNN
+F 1 "+5V" H 5315 2523 50  0000 C CNN
+F 2 "" H 5300 2350 50  0001 C CNN
+F 3 "" H 5300 2350 50  0001 C CNN
+	1    5300 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2450 5000 2550
+	5300 2650 5400 2650
 Wire Wire Line
-	5000 2550 5100 2550
+	5300 2750 5400 2750
 Wire Wire Line
-	5100 2950 5000 2950
+	6000 2650 5900 2650
 Wire Wire Line
-	5000 2950 5000 3050
-Wire Wire Line
-	5100 3050 5000 3050
-Connection ~ 5000 3050
-Wire Wire Line
-	5000 3050 5000 3150
-Wire Wire Line
-	5100 3150 5000 3150
-Connection ~ 5000 3150
-Wire Wire Line
-	5000 3150 5000 3250
-Wire Wire Line
-	5100 3250 5000 3250
-Connection ~ 5000 3250
-Wire Wire Line
-	5000 3250 5000 3350
-Wire Wire Line
-	5100 3350 5000 3350
-Connection ~ 5000 3350
-Wire Wire Line
-	5000 3350 5000 3450
-Wire Wire Line
-	5100 3450 5000 3450
-Connection ~ 5000 3450
-Wire Wire Line
-	5000 3450 5000 3600
-Wire Wire Line
-	5100 2650 5000 2650
-Wire Wire Line
-	5000 2750 5100 2750
-Wire Wire Line
-	5100 2850 5000 2850
+	5900 2750 6000 2750
 Text Notes 6700 3300 0    50   ~ 0
 La Pixy2 est la caméra placée sur la face avant du robot.\nElle doit permettre de distinguer ...\nElle communique avec la F4 via le protocole SPI\nSeulement 5 broches sont nécessaires pour la pixy (3 pour le SPI\n+ l'alim 5V + GND) mais elle dispose d'un connecteur 5*2\nPour des raisons de solidité du montage, on a choisi d'utiliser\négalement un connecteur 5*2 sur le shield
+$Comp
+L Device:C C11
+U 1 1 5E88A20B
+P 5150 2550
+F 0 "C11" V 4898 2550 50  0000 C CNN
+F 1 "100n" V 4989 2550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 2400 50  0001 C CNN
+F 3 "~" H 5150 2550 50  0001 C CNN
+	1    5150 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E88AA1B
+P 5000 2550
+F 0 "#PWR01" H 5000 2300 50  0001 C CNN
+F 1 "GND" V 5005 2422 50  0000 R CNN
+F 2 "" H 5000 2550 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J15
+U 1 1 5E88593F
+P 5600 2850
+F 0 "J15" H 5650 3267 50  0000 C CNN
+F 1 "Pixy" H 5650 3176 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B10B-PHDSS_2x05_P2.00mm_Vertical" H 5600 2850 50  0001 C CNN
+F 3 "~" H 5600 2850 50  0001 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2850 6000 2850
+Wire Wire Line
+	6000 2850 6000 3350
+$Comp
+L power:GND #PWR026
+U 1 1 5E88CD14
+P 6000 3350
+F 0 "#PWR026" H 6000 3100 50  0001 C CNN
+F 1 "GND" H 6005 3177 50  0000 C CNN
+F 2 "" H 6000 3350 50  0001 C CNN
+F 3 "" H 6000 3350 50  0001 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 2950
+NoConn ~ 5900 3050
+NoConn ~ 5400 3050
+NoConn ~ 5400 2950
+NoConn ~ 5400 2850
+Wire Wire Line
+	5300 2350 5300 2550
+Connection ~ 5300 2550
+Wire Wire Line
+	5300 2550 5300 2650
 $EndSCHEMATC
