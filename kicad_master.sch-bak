@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 23
+Sheet 1 24
 Title ""
 Date ""
 Rev ""
@@ -270,7 +270,7 @@ Les 8 connecteur pour les ToFs
 Text Notes 4750 4600 0    50   ~ 0
 Registre à décalage qui permet \nde reset les TOF un par un
 $Sheet
-S 1800 2000 900  450 
+S 1850 2350 900  450 
 U 5E6772A8
 F0 "regulateur_7V5_2V8" 50
 F1 "regulateur_7V5_2V8.sch" 50
@@ -328,17 +328,6 @@ F 3 "~" H 7850 2350 50  0001 C CNN
 $EndComp
 Text GLabel 7850 3150 3    50   Input ~ 0
 ALIM_MOTEURS
-$Comp
-L power:+5V #PWR01
-U 1 1 5E6ADE39
-P 6300 3150
-F 0 "#PWR01" H 6300 3000 50  0001 C CNN
-F 1 "+5V" H 6315 3323 50  0000 C CNN
-F 2 "" H 6300 3150 50  0001 C CNN
-F 3 "" H 6300 3150 50  0001 C CNN
-	1    6300 3150
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5E6A6CBF
@@ -411,7 +400,7 @@ L Device:C C3
 U 1 1 5E6A8F61
 P 6050 2750
 F 0 "C3" V 5798 2750 50  0000 C CNN
-F 1 "C" V 5889 2750 50  0000 C CNN
+F 1 "100n" V 5889 2750 50  0000 C CNN
 F 2 "" H 6088 2600 50  0001 C CNN
 F 3 "~" H 6050 2750 50  0001 C CNN
 	1    6050 2750
@@ -422,7 +411,7 @@ L Device:C C4
 U 1 1 5E6AD189
 P 7600 2750
 F 0 "C4" V 7348 2750 50  0000 C CNN
-F 1 "C" V 7439 2750 50  0000 C CNN
+F 1 "100n" V 7439 2750 50  0000 C CNN
 F 2 "" H 7638 2600 50  0001 C CNN
 F 3 "~" H 7600 2750 50  0001 C CNN
 	1    7600 2750
@@ -553,7 +542,7 @@ $Sheet
 S 1850 3150 900  450 
 U 5E83D769
 F0 "regulateur_7V5_5V" 50
-F1 "regulateur_7V_5V.sch" 50
+F1 "regulateur_7V5_5V.sch" 50
 $EndSheet
 $Sheet
 S 11800 6900 850  600 
@@ -573,10 +562,10 @@ Wire Wire Line
 Wire Wire Line
 	10750 4600 11800 4600
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 5E81B7D6
 P 14800 2250
-F 0 "H?" V 14754 2400 50  0000 L CNN
+F 0 "H1" V 14754 2400 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2400 50  0000 L CNN
 F 2 "" H 14800 2250 50  0001 C CNN
 F 3 "~" H 14800 2250 50  0001 C CNN
@@ -584,10 +573,10 @@ F 3 "~" H 14800 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 5E81C6C2
 P 14800 2450
-F 0 "H?" V 14754 2600 50  0000 L CNN
+F 0 "H2" V 14754 2600 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2600 50  0000 L CNN
 F 2 "" H 14800 2450 50  0001 C CNN
 F 3 "~" H 14800 2450 50  0001 C CNN
@@ -595,10 +584,10 @@ F 3 "~" H 14800 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 5E81F44B
 P 14800 2650
-F 0 "H?" V 14754 2800 50  0000 L CNN
+F 0 "H3" V 14754 2800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2800 50  0000 L CNN
 F 2 "" H 14800 2650 50  0001 C CNN
 F 3 "~" H 14800 2650 50  0001 C CNN
@@ -606,10 +595,10 @@ F 3 "~" H 14800 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H4
 U 1 1 5E81F451
 P 14800 2850
-F 0 "H?" V 14754 3000 50  0000 L CNN
+F 0 "H4" V 14754 3000 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 3000 50  0000 L CNN
 F 2 "" H 14800 2850 50  0001 C CNN
 F 3 "~" H 14800 2850 50  0001 C CNN
@@ -628,10 +617,10 @@ Connection ~ 14700 2850
 Wire Wire Line
 	14700 2850 14700 3000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E82CE64
 P 14700 3000
-F 0 "#PWR?" H 14700 2750 50  0001 C CNN
+F 0 "#PWR0103" H 14700 2750 50  0001 C CNN
 F 1 "GND" H 14705 2827 50  0000 C CNN
 F 2 "" H 14700 3000 50  0001 C CNN
 F 3 "" H 14700 3000 50  0001 C CNN
@@ -643,7 +632,7 @@ Wire Wire Line
 Connection ~ 6300 3050
 Wire Wire Line
 	6300 3050 6300 3150
-Text Notes 2850 2250 0    50   ~ 0
+Text Notes 2900 2600 0    50   ~ 0
 Le régulateur de tension 7V5 -> 2V8 \npour alimenter : les capteurs ToFs
 Wire Wire Line
 	6100 5150 6550 5150
@@ -661,7 +650,7 @@ $Sheet
 S 6550 7300 1350 300 
 U 5E881213
 F0 "UART_debug" 50
-F1 "UART.sch" 50
+F1 "debug.sch" 50
 F2 "TX" I R 7900 7400 50 
 F3 "RX" I R 7900 7500 50 
 $EndSheet
@@ -673,4 +662,23 @@ Wire Wire Line
 	7900 7400 8750 7400
 Wire Wire Line
 	8750 7500 7900 7500
+$Comp
+L power:+7.5V #PWR0105
+U 1 1 5E7FD2EE
+P 6300 3150
+F 0 "#PWR0105" H 6300 3000 50  0001 C CNN
+F 1 "+7.5V" H 6315 3323 50  0000 C CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 1850 1500 900  450 
+U 5E8305B4
+F0 "regulateur_7V5_3V3.sch" 50
+F1 "regulateur_7V5_3V3.sch" 50
+$EndSheet
+Text Notes 2900 1750 0    50   ~ 0
+Le régulateur de tension 7V5 -> 3V3\npour alimenter : la f4\n
 $EndSCHEMATC

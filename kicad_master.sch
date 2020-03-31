@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 23
+Sheet 1 22
 Title ""
 Date ""
 Rev ""
@@ -270,13 +270,13 @@ Les 8 connecteur pour les ToFs
 Text Notes 4750 4600 0    50   ~ 0
 Registre à décalage qui permet \nde reset les TOF un par un
 $Sheet
-S 1800 2000 900  450 
+S 1850 2350 900  450 
 U 5E6772A8
 F0 "regulateur_7V5_2V8" 50
 F1 "regulateur_7V5_2V8.sch" 50
 $EndSheet
 Text Notes 2900 3450 0    50   ~ 0
-Le régulateur de tension 7V5 -> 5V\npour alimenter : pont en H, pull-ups \ndes capteurs de fin de course
+Le régulateur de tension 7V5 -> 5V\npour alimenter : pont en H ; Nucleo F401RE
 $Sheet
 S 14100 4300 900  350 
 U 5E685A03
@@ -329,17 +329,6 @@ $EndComp
 Text GLabel 7850 3150 3    50   Input ~ 0
 ALIM_MOTEURS
 $Comp
-L power:+5V #PWR01
-U 1 1 5E6ADE39
-P 6300 3150
-F 0 "#PWR01" H 6300 3000 50  0001 C CNN
-F 1 "+5V" H 6315 3323 50  0000 C CNN
-F 2 "" H 6300 3150 50  0001 C CNN
-F 3 "" H 6300 3150 50  0001 C CNN
-	1    6300 3150
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5E6A6CBF
 P 6500 3150
@@ -366,52 +355,11 @@ F 3 "~" H 6300 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5E6CC857
-P 6500 3050
-F 0 "#FLG02" H 6500 3125 50  0001 C CNN
-F 1 "PWR_FLAG" V 6500 3177 50  0000 L CNN
-F 2 "" H 6500 3050 50  0001 C CNN
-F 3 "~" H 6500 3050 50  0001 C CNN
-	1    6500 3050
-	0    1    1    0   
-$EndComp
-Connection ~ 6500 3050
-Wire Wire Line
-	6500 3050 6500 3150
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5E6D62A0
-P 8100 3050
-F 0 "#FLG04" H 8100 3125 50  0001 C CNN
-F 1 "PWR_FLAG" V 8100 3177 50  0000 L CNN
-F 2 "" H 8100 3050 50  0001 C CNN
-F 3 "~" H 8100 3050 50  0001 C CNN
-	1    8100 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5E6D7F5E
-P 7850 3050
-F 0 "#FLG03" H 7850 3125 50  0001 C CNN
-F 1 "PWR_FLAG" V 7850 3177 50  0000 L CNN
-F 2 "" H 7850 3050 50  0001 C CNN
-F 3 "~" H 7850 3050 50  0001 C CNN
-	1    7850 3050
-	0    -1   -1   0   
-$EndComp
-Connection ~ 7850 3050
-Wire Wire Line
-	7850 3050 7850 3150
-Wire Wire Line
-	8100 3050 8100 3150
-$Comp
 L Device:C C3
 U 1 1 5E6A8F61
 P 6050 2750
 F 0 "C3" V 5798 2750 50  0000 C CNN
-F 1 "C" V 5889 2750 50  0000 C CNN
+F 1 "100n" V 5889 2750 50  0000 C CNN
 F 2 "" H 6088 2600 50  0001 C CNN
 F 3 "~" H 6050 2750 50  0001 C CNN
 	1    6050 2750
@@ -422,7 +370,7 @@ L Device:C C4
 U 1 1 5E6AD189
 P 7600 2750
 F 0 "C4" V 7348 2750 50  0000 C CNN
-F 1 "C" V 7439 2750 50  0000 C CNN
+F 1 "100n" V 7439 2750 50  0000 C CNN
 F 2 "" H 7638 2600 50  0001 C CNN
 F 3 "~" H 7600 2750 50  0001 C CNN
 	1    7600 2750
@@ -451,8 +399,6 @@ F 3 "" H 5900 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 2550 6500 3050
-Wire Wire Line
 	6300 2550 6300 2750
 Wire Wire Line
 	6200 2750 6300 2750
@@ -460,13 +406,8 @@ Connection ~ 6300 2750
 Wire Wire Line
 	7750 2750 7850 2750
 Wire Wire Line
-	7850 2750 7850 3050
-Wire Wire Line
 	7850 2550 7850 2750
 Connection ~ 7850 2750
-Wire Wire Line
-	8100 2550 8100 3050
-Connection ~ 8100 3050
 $Sheet
 S 11800 4300 1550 950 
 U 5E6AC71D
@@ -503,32 +444,6 @@ Text Notes 11800 4050 0    50   ~ 0
 quadruple demi pont en H pour le \ncontrôle des moteurs\n
 Text Notes 14100 4050 0    50   ~ 0
 Connecteurs des moteurs\n
-$Sheet
-S 8750 4400 2000 3350
-U 5E6933BA
-F0 "F4" 50
-F1 "f4.sch" 50
-F2 "NRST" I L 8750 4800 50 
-F3 "I2C_ToF_SDA" I L 8750 6300 50 
-F4 "I2C_ToF_SCL" I L 8750 6150 50 
-F5 "ToF_Reset_Shift" I L 8750 5250 50 
-F6 "ToF_Reset_Data" I L 8750 5150 50 
-F7 "finDeCourse_bras" I R 10750 5850 50 
-F8 "finDeCourse_drapeau" I R 10750 6350 50 
-F9 "pixy_spi_clk" I R 10750 7100 50 
-F10 "pixy_spi_miso" I R 10750 7200 50 
-F11 "pixy_spi_mosi" I R 10750 7300 50 
-F12 "drapeau_sens_direct" I R 10750 5000 50 
-F13 "bras_sens_direct" I R 10750 4800 50 
-F14 "drapeau_sens_inverse" I R 10750 5100 50 
-F15 "bras_sens_inverse" I R 10750 4900 50 
-F16 "drapeau_PWM" I R 10750 4700 50 
-F17 "bras_PWM" I R 10750 4600 50 
-F18 "comm_f3_tx" I L 8750 6900 50 
-F19 "comm_f3_rx" I L 8750 7000 50 
-F20 "debug_tx" I L 8750 7400 50 
-F21 "debug_rx" I L 8750 7500 50 
-$EndSheet
 Wire Wire Line
 	10750 6350 11800 6350
 Wire Wire Line
@@ -573,10 +488,10 @@ Wire Wire Line
 Wire Wire Line
 	10750 4600 11800 4600
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 5E81B7D6
 P 14800 2250
-F 0 "H?" V 14754 2400 50  0000 L CNN
+F 0 "H1" V 14754 2400 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2400 50  0000 L CNN
 F 2 "" H 14800 2250 50  0001 C CNN
 F 3 "~" H 14800 2250 50  0001 C CNN
@@ -584,10 +499,10 @@ F 3 "~" H 14800 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 5E81C6C2
 P 14800 2450
-F 0 "H?" V 14754 2600 50  0000 L CNN
+F 0 "H2" V 14754 2600 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2600 50  0000 L CNN
 F 2 "" H 14800 2450 50  0001 C CNN
 F 3 "~" H 14800 2450 50  0001 C CNN
@@ -595,10 +510,10 @@ F 3 "~" H 14800 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 5E81F44B
 P 14800 2650
-F 0 "H?" V 14754 2800 50  0000 L CNN
+F 0 "H3" V 14754 2800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 2800 50  0000 L CNN
 F 2 "" H 14800 2650 50  0001 C CNN
 F 3 "~" H 14800 2650 50  0001 C CNN
@@ -606,10 +521,10 @@ F 3 "~" H 14800 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H4
 U 1 1 5E81F451
 P 14800 2850
-F 0 "H?" V 14754 3000 50  0000 L CNN
+F 0 "H4" V 14754 3000 50  0000 L CNN
 F 1 "MountingHole_Pad" V 14845 3000 50  0000 L CNN
 F 2 "" H 14800 2850 50  0001 C CNN
 F 3 "~" H 14800 2850 50  0001 C CNN
@@ -628,10 +543,10 @@ Connection ~ 14700 2850
 Wire Wire Line
 	14700 2850 14700 3000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E82CE64
 P 14700 3000
-F 0 "#PWR?" H 14700 2750 50  0001 C CNN
+F 0 "#PWR0103" H 14700 2750 50  0001 C CNN
 F 1 "GND" H 14705 2827 50  0000 C CNN
 F 2 "" H 14700 3000 50  0001 C CNN
 F 3 "" H 14700 3000 50  0001 C CNN
@@ -643,8 +558,8 @@ Wire Wire Line
 Connection ~ 6300 3050
 Wire Wire Line
 	6300 3050 6300 3150
-Text Notes 2850 2250 0    50   ~ 0
-Le régulateur de tension 7V5 -> 2V8 \npour alimenter : les capteurs ToFs
+Text Notes 2900 2600 0    50   ~ 0
+Le régulateur de tension 7V5 -> 2V8 \npour alimenter : les capteurs ToFs ; Le registre à décalage
 Wire Wire Line
 	6100 5150 6550 5150
 Text Notes 5850 2100 0    50   ~ 0
@@ -657,20 +572,77 @@ F1 "UART.sch" 50
 F2 "TX" I R 7900 6900 50 
 F3 "RX" I R 7900 7000 50 
 $EndSheet
-$Sheet
-S 6550 7300 1350 300 
-U 5E881213
-F0 "UART_debug" 50
-F1 "UART.sch" 50
-F2 "TX" I R 7900 7400 50 
-F3 "RX" I R 7900 7500 50 
-$EndSheet
 Wire Wire Line
 	7900 6900 8750 6900
 Wire Wire Line
 	8750 7000 7900 7000
+$Comp
+L power:+7.5V #PWR0105
+U 1 1 5E7FD2EE
+P 6300 3150
+F 0 "#PWR0105" H 6300 3000 50  0001 C CNN
+F 1 "+7.5V" H 6315 3323 50  0000 C CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	7900 7400 8750 7400
+	6500 2550 6500 3050
 Wire Wire Line
-	8750 7500 7900 7500
+	6500 3050 6500 3150
+Connection ~ 6500 3050
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E6CC857
+P 6500 3050
+F 0 "#FLG02" H 6500 3125 50  0001 C CNN
+F 1 "PWR_FLAG" V 6500 3177 50  0000 L CNN
+F 2 "" H 6500 3050 50  0001 C CNN
+F 3 "~" H 6500 3050 50  0001 C CNN
+	1    6500 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2550 8100 3150
+Wire Wire Line
+	7850 2750 7850 3050
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E95264E
+P 7850 3050
+F 0 "#FLG0103" H 7850 3125 50  0001 C CNN
+F 1 "PWR_FLAG" V 7850 3177 50  0000 L CNN
+F 2 "" H 7850 3050 50  0001 C CNN
+F 3 "~" H 7850 3050 50  0001 C CNN
+	1    7850 3050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7850 3050
+Wire Wire Line
+	7850 3050 7850 3150
+$Sheet
+S 8750 4400 2000 3350
+U 5E6933BA
+F0 "F4" 50
+F1 "f4.sch" 50
+F2 "NRST" I L 8750 4800 50 
+F3 "I2C_ToF_SDA" I L 8750 6300 50 
+F4 "I2C_ToF_SCL" I L 8750 6150 50 
+F5 "ToF_Reset_Shift" I L 8750 5250 50 
+F6 "ToF_Reset_Data" I L 8750 5150 50 
+F7 "finDeCourse_bras" I R 10750 5850 50 
+F8 "finDeCourse_drapeau" I R 10750 6350 50 
+F9 "pixy_spi_clk" I R 10750 7100 50 
+F10 "pixy_spi_miso" I R 10750 7200 50 
+F11 "pixy_spi_mosi" I R 10750 7300 50 
+F12 "drapeau_sens_direct" I R 10750 5000 50 
+F13 "bras_sens_direct" I R 10750 4800 50 
+F14 "drapeau_sens_inverse" I R 10750 5100 50 
+F15 "bras_sens_inverse" I R 10750 4900 50 
+F16 "drapeau_PWM" I R 10750 4700 50 
+F17 "bras_PWM" I R 10750 4600 50 
+F18 "comm_f3_tx" I L 8750 6900 50 
+F19 "comm_f3_rx" I L 8750 7000 50 
+$EndSheet
 $EndSCHEMATC

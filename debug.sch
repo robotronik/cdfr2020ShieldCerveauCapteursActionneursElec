@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 24
+Sheet 23 24
 Title ""
 Date ""
 Rev ""
@@ -19,10 +19,10 @@ TX
 Text HLabel 6450 2800 0    50   Input ~ 0
 RX
 $Comp
-L Connector_Generic:Conn_01x03 J16
-U 1 1 5E8486F8
+L Connector_Generic:Conn_01x03 J17
+U 1 1 5E88C3CE
 P 6800 2800
-F 0 "J16" H 6880 2842 50  0000 L CNN
+F 0 "J17" H 6880 2842 50  0000 L CNN
 F 1 "Conn_01x03" H 6880 2751 50  0000 L CNN
 F 2 "" H 6800 2800 50  0001 C CNN
 F 3 "~" H 6800 2800 50  0001 C CNN
@@ -30,10 +30,10 @@ F 3 "~" H 6800 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0124
-U 1 1 5E8486F9
+L power:GND #PWR0125
+U 1 1 5E88DB1A
 P 6450 3100
-F 0 "#PWR0124" H 6450 2850 50  0001 C CNN
+F 0 "#PWR0125" H 6450 2850 50  0001 C CNN
 F 1 "GND" H 6455 2927 50  0000 C CNN
 F 2 "" H 6450 3100 50  0001 C CNN
 F 3 "" H 6450 3100 50  0001 C CNN
@@ -48,6 +48,6 @@ Wire Wire Line
 	6600 2900 6450 2900
 Wire Wire Line
 	6450 2900 6450 3100
-Text Notes 6150 2300 0    50   ~ 0
-On aura besoin d'UART :\n- pour debugger le robot\n- pour communiquer avec la f3\n
+Text Notes 5600 2400 0    50   ~ 0
+On aura besoin d'UART pour debugger le robot, avecla possibilité de le reset\n
 $EndSCHEMATC

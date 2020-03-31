@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 23
+Sheet 3 22
 Title ""
 Date ""
 Rev ""
@@ -26,7 +26,7 @@ AR Path="/5E68B65A/5E684EEF" Ref="J7"  Part="1"
 AR Path="/5E68B65F/5E684EEF" Ref="J8"  Part="1" 
 AR Path="/5E68B664/5E684EEF" Ref="J9"  Part="1" 
 AR Path="/5E68B669/5E684EEF" Ref="J10"  Part="1" 
-F 0 "J3" H 5330 3492 50  0000 L CNN
+F 0 "J10" H 5330 3492 50  0000 L CNN
 F 1 "Conn_01x05" H 5330 3401 50  0000 L CNN
 F 2 "" H 5250 3450 50  0001 C CNN
 F 3 "~" H 5250 3450 50  0001 C CNN
@@ -45,7 +45,7 @@ AR Path="/5E68B65A/5E6859B3" Ref="#PWR015"  Part="1"
 AR Path="/5E68B65F/5E6859B3" Ref="#PWR017"  Part="1" 
 AR Path="/5E68B664/5E6859B3" Ref="#PWR019"  Part="1" 
 AR Path="/5E68B669/5E6859B3" Ref="#PWR021"  Part="1" 
-F 0 "#PWR07" H 4900 3400 50  0001 C CNN
+F 0 "#PWR021" H 4900 3400 50  0001 C CNN
 F 1 "GND" V 4905 3522 50  0000 R CNN
 F 2 "" H 4900 3650 50  0001 C CNN
 F 3 "" H 4900 3650 50  0001 C CNN
@@ -64,7 +64,7 @@ AR Path="/5E68B65A/5E686310" Ref="#PWR014"  Part="1"
 AR Path="/5E68B65F/5E686310" Ref="#PWR016"  Part="1" 
 AR Path="/5E68B664/5E686310" Ref="#PWR018"  Part="1" 
 AR Path="/5E68B669/5E686310" Ref="#PWR020"  Part="1" 
-F 0 "#PWR06" H 4900 3100 50  0001 C CNN
+F 0 "#PWR020" H 4900 3100 50  0001 C CNN
 F 1 "+2V8" V 4915 3378 50  0000 L CNN
 F 2 "" H 4900 3250 50  0001 C CNN
 F 3 "" H 4900 3250 50  0001 C CNN
@@ -88,5 +88,5 @@ Wire Wire Line
 Wire Wire Line
 	4900 3650 5050 3650
 Text Notes 4100 2700 0    50   ~ 0
-Les capteurs ToFs (Time of Flight) permettent de mesure la\ndistance à l'objet en face d'eux de manière plus précise\nque les capteurs ultrason, moyennant une mise en place\nun peu plus compliquée\nIls communiquent avec la F4 via protocole I2C
+Les capteurs ToFs (Time of Flight) permettent de mesurer la\ndistance à l'objet en face d'eux de manière plus précise\nque les capteurs ultrason, moyennant une mise en place\nun peu plus compliquée\nIls communiquent avec la F4 via protocole I2C
 $EndSCHEMATC
