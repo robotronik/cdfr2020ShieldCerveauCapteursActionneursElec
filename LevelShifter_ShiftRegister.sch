@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E667E37
 P 3600 3900
 AR Path="/5E6222E7/5E667E37" Ref="R?"  Part="1" 
@@ -28,7 +28,7 @@ F 3 "~" H 3600 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E667E3D
 P 6850 3850
 AR Path="/5E6222E7/5E667E3D" Ref="R?"  Part="1" 
@@ -46,7 +46,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 4350 3600 4350
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E667E46
 P 5100 4250
 AR Path="/5E6222E7/5E667E46" Ref="Q?"  Part="1" 
@@ -60,7 +60,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5100 4250 50  000
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E667E4D
 P 5350 5350
 AR Path="/5E6222E7/5E667E4D" Ref="Q?"  Part="1" 
@@ -74,7 +74,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5350 5350 50  000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E667E56
 P 3900 5000
 AR Path="/5E6222E7/5E667E56" Ref="R?"  Part="1" 
@@ -93,7 +93,7 @@ Connection ~ 3900 5450
 Wire Wire Line
 	6850 4350 8300 4350
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E667E61
 P 7150 5150
 AR Path="/5E6222E7/5E667E61" Ref="R?"  Part="1" 
@@ -130,7 +130,7 @@ STM32_DSAB
 Text HLabel 8300 5450 2    50   Input ~ 0
 STM32_CP
 $Comp
-L power:+2V8 #PWR024
+L shield_etage2-rescue:+2V8-power #PWR024
 U 1 1 5E669CBC
 P 3600 3200
 F 0 "#PWR024" H 3600 3050 50  0001 C CNN
@@ -141,7 +141,7 @@ F 3 "" H 3600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR025
+L shield_etage2-rescue:+3V3-power #PWR025
 U 1 1 5E66B01C
 P 6850 3200
 F 0 "#PWR025" H 6850 3050 50  0001 C CNN

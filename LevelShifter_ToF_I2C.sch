@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 1800 2650 0    50   Input ~ 0
 I2C_SCL_ToF
 $Comp
-L power:+3.3V #PWR?
+L shield_etage2-rescue:+3.3V-power #PWR?
 U 1 1 5E632CF7
 P 5850 1850
 AR Path="/5E6222E7/5E632CF7" Ref="#PWR?"  Part="1" 
@@ -29,7 +29,7 @@ F 3 "" H 5850 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+2V8 #PWR?
+L shield_etage2-rescue:+2V8-power #PWR?
 U 1 1 5E632CFD
 P 2650 1850
 AR Path="/5E6222E7/5E632CFD" Ref="#PWR?"  Part="1" 
@@ -42,7 +42,7 @@ F 3 "" H 2650 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E632D03
 P 2650 2150
 AR Path="/5E6222E7/5E632D03" Ref="R?"  Part="1" 
@@ -55,7 +55,7 @@ F 3 "~" H 2650 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E632D09
 P 5850 2150
 AR Path="/5E6222E7/5E632D09" Ref="R?"  Part="1" 
@@ -68,7 +68,7 @@ F 3 "~" H 5850 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E632D0F
 P 4200 2550
 AR Path="/5E6222E7/5E632D0F" Ref="Q?"  Part="1" 
@@ -94,7 +94,7 @@ Wire Wire Line
 Text HLabel 1800 3750 0    50   Input ~ 0
 I2C_SDA_ToF
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E63BCC7
 P 2900 3300
 AR Path="/5E6222E7/5E63BCC7" Ref="R?"  Part="1" 
@@ -107,7 +107,7 @@ F 3 "~" H 2900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E63BCCD
 P 6150 3250
 AR Path="/5E6222E7/5E63BCCD" Ref="R?"  Part="1" 
@@ -147,7 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3750 2900 3750
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E63BCD3
 P 4450 3650
 AR Path="/5E6222E7/5E63BCD3" Ref="Q?"  Part="1" 

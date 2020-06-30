@@ -291,7 +291,7 @@ F2 "pin1" I L 14100 5000 50
 F3 "pin2" I L 14100 5100 50 
 $EndSheet
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L shield_etage2-rescue:Conn_01x02-Connector_Generic J1
 U 1 1 5E6A42B0
 P 6300 2350
 F 0 "J1" V 6264 2162 50  0000 R CNN
@@ -302,7 +302,7 @@ F 3 "~" H 6300 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR03
+L shield_etage2-rescue:GND-power #PWR03
 U 1 1 5E6A7F5C
 P 8100 3150
 F 0 "#PWR03" H 8100 2900 50  0001 C CNN
@@ -313,7 +313,7 @@ F 3 "" H 8100 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L shield_etage2-rescue:Conn_01x02-Connector_Generic J2
 U 1 1 5E6A5692
 P 7850 2350
 F 0 "J2" V 7814 2162 50  0000 R CNN
@@ -326,7 +326,7 @@ $EndComp
 Text GLabel 7850 3150 3    50   Input ~ 0
 ALIM_MOTEURS
 $Comp
-L power:GND #PWR02
+L shield_etage2-rescue:GND-power #PWR02
 U 1 1 5E6A6CBF
 P 6500 3150
 F 0 "#PWR02" H 6500 2900 50  0001 C CNN
@@ -341,7 +341,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 2550 8100 2550
 $Comp
-L power:PWR_FLAG #FLG01
+L shield_etage2-rescue:PWR_FLAG-power #FLG01
 U 1 1 5E6C9FE5
 P 6300 3050
 F 0 "#FLG01" H 6300 3125 50  0001 C CNN
@@ -352,7 +352,7 @@ F 3 "~" H 6300 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L shield_etage2-rescue:C-Device C3
 U 1 1 5E6A8F61
 P 6050 2750
 F 0 "C3" V 5798 2750 50  0000 C CNN
@@ -363,7 +363,7 @@ F 3 "~" H 6050 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C4
+L shield_etage2-rescue:C-Device C4
 U 1 1 5E6AD189
 P 7600 2750
 F 0 "C4" V 7348 2750 50  0000 C CNN
@@ -374,7 +374,7 @@ F 3 "~" H 7600 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0101
+L shield_etage2-rescue:GND-power #PWR0101
 U 1 1 5E6ADDFF
 P 7450 2750
 F 0 "#PWR0101" H 7450 2500 50  0001 C CNN
@@ -385,7 +385,7 @@ F 3 "" H 7450 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L shield_etage2-rescue:GND-power #PWR0102
 U 1 1 5E6AE41B
 P 5900 2750
 F 0 "#PWR0102" H 5900 2500 50  0001 C CNN
@@ -479,7 +479,7 @@ Wire Wire Line
 Wire Wire Line
 	10750 4600 11800 4600
 $Comp
-L Mechanical:MountingHole_Pad H1
+L shield_etage2-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 5E81B7D6
 P 14800 2250
 F 0 "H1" V 14754 2400 50  0000 L CNN
@@ -490,7 +490,7 @@ F 3 "~" H 14800 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L shield_etage2-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 5E81C6C2
 P 14800 2450
 F 0 "H2" V 14754 2600 50  0000 L CNN
@@ -501,7 +501,7 @@ F 3 "~" H 14800 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L shield_etage2-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 5E81F44B
 P 14800 2650
 F 0 "H3" V 14754 2800 50  0000 L CNN
@@ -512,7 +512,7 @@ F 3 "~" H 14800 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L shield_etage2-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 5E81F451
 P 14800 2850
 F 0 "H4" V 14754 3000 50  0000 L CNN
@@ -534,7 +534,7 @@ Connection ~ 14700 2850
 Wire Wire Line
 	14700 2850 14700 3000
 $Comp
-L power:GND #PWR0103
+L shield_etage2-rescue:GND-power #PWR0103
 U 1 1 5E82CE64
 P 14700 3000
 F 0 "#PWR0103" H 14700 2750 50  0001 C CNN
@@ -573,7 +573,7 @@ Wire Wire Line
 	6500 3050 6500 3150
 Connection ~ 6500 3050
 $Comp
-L power:PWR_FLAG #FLG02
+L shield_etage2-rescue:PWR_FLAG-power #FLG02
 U 1 1 5E6CC857
 P 6500 3050
 F 0 "#FLG02" H 6500 3125 50  0001 C CNN
@@ -588,7 +588,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 2750 7850 3050
 $Comp
-L power:PWR_FLAG #FLG0103
+L shield_etage2-rescue:PWR_FLAG-power #FLG0103
 U 1 1 5E95264E
 P 7850 3050
 F 0 "#FLG0103" H 7850 3125 50  0001 C CNN
@@ -626,7 +626,7 @@ F18 "comm_f3_tx" I L 8750 6900 50
 F19 "comm_f3_rx" I L 8750 7000 50 
 $EndSheet
 $Comp
-L power:+6V #PWR0105
+L shield_etage2-rescue:+6V-power #PWR0105
 U 1 1 5E859DB4
 P 6300 3150
 F 0 "#PWR0105" H 6300 3000 50  0001 C CNN

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Driver_Motor:L293D U5
+L shield_etage2-rescue:L293D-Driver_Motor U5
 U 1 1 5E6ACB12
 P 6100 4750
 F 0 "U5" H 6100 5931 50  0000 C CNN
@@ -40,7 +40,7 @@ Wire Wire Line
 	6000 5750 6000 5900
 Connection ~ 6000 5750
 $Comp
-L power:GND #PWR0107
+L shield_etage2-rescue:GND-power #PWR0107
 U 1 1 5E6AEBFC
 P 6000 5900
 F 0 "#PWR0107" H 6000 5650 50  0001 C CNN
@@ -83,7 +83,7 @@ moteur1_pin2
 Text HLabel 7200 4750 2    50   Input ~ 0
 moteur2_pin1
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E80BDFA
 P 2400 4300
 AR Path="/5E6222E7/5E80BDFA" Ref="R?"  Part="1" 
@@ -98,7 +98,7 @@ F 3 "~" H 2400 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E80BE00
 P 3100 4300
 AR Path="/5E6222E7/5E80BE00" Ref="R?"  Part="1" 
@@ -113,7 +113,7 @@ F 3 "~" H 3100 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E80BE08
 P 2750 4450
 AR Path="/5E6222E7/5E80BE08" Ref="Q?"  Part="1" 
@@ -130,7 +130,7 @@ $EndComp
 Wire Wire Line
 	2950 4550 3100 4550
 $Comp
-L power:+3V3 #PWR?
+L shield_etage2-rescue:+3V3-power #PWR?
 U 1 1 5E80BE1C
 P 2400 4000
 AR Path="/5E66627C/5E80BE1C" Ref="#PWR?"  Part="1" 
@@ -158,7 +158,7 @@ Wire Wire Line
 	2400 4550 2100 4550
 Connection ~ 2400 4550
 $Comp
-L power:+5V #PWR0110
+L shield_etage2-rescue:+5V-power #PWR0110
 U 1 1 5E8288E7
 P 3100 4050
 F 0 "#PWR0110" H 3100 3900 50  0001 C CNN
@@ -172,7 +172,7 @@ Connection ~ 3100 4550
 Wire Wire Line
 	3100 4050 3100 4150
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E8639E8
 P 2400 5550
 AR Path="/5E6222E7/5E8639E8" Ref="R?"  Part="1" 
@@ -187,7 +187,7 @@ F 3 "~" H 2400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E8639EE
 P 3100 5550
 AR Path="/5E6222E7/5E8639EE" Ref="R?"  Part="1" 
@@ -202,7 +202,7 @@ F 3 "~" H 3100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:BSS138 Q?
+L shield_etage2-rescue:BSS138-Transistor_FET Q?
 U 1 1 5E8639F4
 P 2750 5700
 AR Path="/5E6222E7/5E8639F4" Ref="Q?"  Part="1" 
@@ -219,7 +219,7 @@ $EndComp
 Wire Wire Line
 	2950 5800 3100 5800
 $Comp
-L power:+3V3 #PWR?
+L shield_etage2-rescue:+3V3-power #PWR?
 U 1 1 5E8639FB
 P 2400 5250
 AR Path="/5E66627C/5E8639FB" Ref="#PWR?"  Part="1" 
@@ -247,7 +247,7 @@ Wire Wire Line
 	2400 5800 2100 5800
 Connection ~ 2400 5800
 $Comp
-L power:+5V #PWR0112
+L shield_etage2-rescue:+5V-power #PWR0112
 U 1 1 5E863A0A
 P 3100 5300
 F 0 "#PWR0112" H 3100 5150 50  0001 C CNN
@@ -271,7 +271,7 @@ pwm_bras_enable
 Text HLabel 2100 5800 0    50   Input ~ 0
 pwm_drapeau_enable
 $Comp
-L power:+5V #PWR0113
+L shield_etage2-rescue:+5V-power #PWR0113
 U 1 1 5E8690D7
 P 6000 3400
 F 0 "#PWR0113" H 6000 3250 50  0001 C CNN
@@ -284,7 +284,7 @@ $EndComp
 Text Notes 3950 1300 0    50   ~ 0
 FCL = Fault Current Limiter\nPour éviter un pic de courant si\nun moteur grille
 $Comp
-L Regulator_Linear:LM317_TO3 U?
+L shield_etage2-rescue:LM317_TO3-Regulator_Linear U?
 U 1 1 5E7F198B
 P 4400 1750
 AR Path="/5E686EE6/5E7F198B" Ref="U?"  Part="1" 
@@ -300,7 +300,7 @@ $EndComp
 Text Notes 5300 1700 0    50   ~ 0
 Is = 1.25/R\n
 $Comp
-L Device:R R?
+L shield_etage2-rescue:R-Device R?
 U 1 1 5E7F1992
 P 4950 1750
 AR Path="/5E686EE6/5E7F1992" Ref="R?"  Part="1" 
@@ -351,7 +351,7 @@ Pour le contrôle des moteurs :\nMoteur 1 en sens direct : \n- bras_sens_direct 
 Wire Wire Line
 	5150 1750 6200 1750
 $Comp
-L Device:C C?
+L shield_etage2-rescue:C-Device C?
 U 1 1 5E83530F
 P 5850 3500
 AR Path="/5E627338/5E83530F" Ref="C?"  Part="1" 
@@ -364,7 +364,7 @@ F 3 "~" H 5850 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L shield_etage2-rescue:GND-power #PWR?
 U 1 1 5E835315
 P 5700 3500
 AR Path="/5E627338/5E835315" Ref="#PWR?"  Part="1" 
@@ -377,7 +377,7 @@ F 3 "" H 5700 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L shield_etage2-rescue:C-Device C?
 U 1 1 5E8363F0
 P 6350 3500
 AR Path="/5E627338/5E8363F0" Ref="C?"  Part="1" 
@@ -390,7 +390,7 @@ F 3 "~" H 6350 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L shield_etage2-rescue:GND-power #PWR?
 U 1 1 5E8363F6
 P 6500 3500
 AR Path="/5E627338/5E8363F6" Ref="#PWR?"  Part="1" 
@@ -419,7 +419,7 @@ Wire Wire Line
 	2400 4000 2400 4050
 Connection ~ 2400 4050
 $Comp
-L power:PWR_FLAG #FLG0101
+L shield_etage2-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5E94CE45
 P 6200 1750
 F 0 "#FLG0101" H 6200 1825 50  0001 C CNN

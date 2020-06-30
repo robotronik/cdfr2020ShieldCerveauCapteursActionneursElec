@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 21
+Sheet 8 21
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x05 J3
+L shield_etage2-rescue:Conn_01x05-Connector_Generic J3
 U 1 1 5E684EEF
 P 5250 3450
 AR Path="/5E678883/5E684EEF" Ref="J3"  Part="1" 
@@ -25,7 +25,7 @@ AR Path="/5E68B65A/5E684EEF" Ref="J7"  Part="1"
 AR Path="/5E68B65F/5E684EEF" Ref="J8"  Part="1" 
 AR Path="/5E68B664/5E684EEF" Ref="J9"  Part="1" 
 AR Path="/5E68B669/5E684EEF" Ref="J10"  Part="1" 
-F 0 "J4" H 5330 3492 50  0000 L CNN
+F 0 "J8" H 5330 3492 50  0000 L CNN
 F 1 "ToF" H 5330 3401 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical" H 5250 3450 50  0001 C CNN
 F 3 "~" H 5250 3450 50  0001 C CNN
@@ -33,7 +33,7 @@ F 3 "~" H 5250 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L shield_etage2-rescue:GND-power #PWR07
 U 1 1 5E6859B3
 P 4900 3650
 AR Path="/5E678883/5E6859B3" Ref="#PWR07"  Part="1" 
@@ -44,7 +44,7 @@ AR Path="/5E68B65A/5E6859B3" Ref="#PWR015"  Part="1"
 AR Path="/5E68B65F/5E6859B3" Ref="#PWR017"  Part="1" 
 AR Path="/5E68B664/5E6859B3" Ref="#PWR019"  Part="1" 
 AR Path="/5E68B669/5E6859B3" Ref="#PWR021"  Part="1" 
-F 0 "#PWR09" H 4900 3400 50  0001 C CNN
+F 0 "#PWR017" H 4900 3400 50  0001 C CNN
 F 1 "GND" V 4905 3522 50  0000 R CNN
 F 2 "" H 4900 3650 50  0001 C CNN
 F 3 "" H 4900 3650 50  0001 C CNN
@@ -52,7 +52,7 @@ F 3 "" H 4900 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+2V8 #PWR06
+L shield_etage2-rescue:+2V8-power #PWR06
 U 1 1 5E686310
 P 4900 3250
 AR Path="/5E678883/5E686310" Ref="#PWR06"  Part="1" 
@@ -63,7 +63,7 @@ AR Path="/5E68B65A/5E686310" Ref="#PWR014"  Part="1"
 AR Path="/5E68B65F/5E686310" Ref="#PWR016"  Part="1" 
 AR Path="/5E68B664/5E686310" Ref="#PWR018"  Part="1" 
 AR Path="/5E68B669/5E686310" Ref="#PWR020"  Part="1" 
-F 0 "#PWR08" H 4900 3100 50  0001 C CNN
+F 0 "#PWR016" H 4900 3100 50  0001 C CNN
 F 1 "+2V8" V 4915 3378 50  0000 L CNN
 F 2 "" H 4900 3250 50  0001 C CNN
 F 3 "" H 4900 3250 50  0001 C CNN

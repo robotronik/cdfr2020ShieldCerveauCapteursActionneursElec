@@ -34,7 +34,7 @@ comm_f3_rx
 Text HLabel 13250 1950 0    50   Input ~ 0
 NRST
 $Comp
-L Device:C C?
+L shield_etage2-rescue:C-Device C?
 U 1 1 5E81E95C
 P 14300 2250
 AR Path="/5E811168/5E81E95C" Ref="C?"  Part="1" 
@@ -47,7 +47,7 @@ F 3 "~" H 14300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L shield_etage2-rescue:GND-power #PWR?
 U 1 1 5E81E962
 P 14300 2400
 AR Path="/5E811168/5E81E962" Ref="#PWR?"  Part="1" 
@@ -60,7 +60,7 @@ F 3 "" H 14300 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L shield_etage2-rescue:GND-power #PWR?
 U 1 1 5E81E968
 P 13800 2400
 AR Path="/5E811168/5E81E968" Ref="#PWR?"  Part="1" 
@@ -73,7 +73,7 @@ F 3 "" H 13800 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L shield_etage2-rescue:SW_Push-Switch SW1
 U 1 1 5E823FD4
 P 13800 2200
 F 0 "SW1" V 13846 2152 50  0000 R CNN
@@ -101,7 +101,7 @@ Text Notes 5700 5800 0    50   ~ 0
 PB12\nPB13\nPB14\nPB15
 Connection ~ 13800 1950
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 1 1 5E889489
 P 3650 4500
 F 0 "A1" H 3650 6267 50  0000 C CNN
@@ -115,7 +115,7 @@ F 6 "13" H 3650 4500 50  0001 L BNN "Champ6"
 	1    0    0    -1  
 $EndComp
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 2 1 5E88AFC4
 P 7500 4600
 F 0 "A1" H 7500 6267 50  0000 C CNN
@@ -141,7 +141,7 @@ I2C_ToF_SCL
 Text HLabel 2950 4800 0    50   Input ~ 0
 I2C_ToF_SDA
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 3 1 5E88FA35
 P 11950 5000
 F 0 "A1" H 11950 5567 50  0000 C CNN
@@ -173,7 +173,7 @@ bras_PWM
 Text Notes 2250 4850 0    50   ~ 0
 PB7\n
 $Comp
-L power:+5V #PWR0126
+L shield_etage2-rescue:+5V-power #PWR0126
 U 1 1 5E8EEA6E
 P 5050 3150
 F 0 "#PWR0126" H 5050 3000 50  0001 C CNN
@@ -184,7 +184,7 @@ F 3 "" H 5050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L shield_etage2-rescue:C-Device C10
 U 1 1 5E8F04FC
 P 5350 3200
 F 0 "C10" V 5602 3200 50  0000 C CNN
@@ -195,7 +195,7 @@ F 3 "~" H 5350 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0127
+L shield_etage2-rescue:GND-power #PWR0127
 U 1 1 5E8F1C24
 P 5500 3200
 F 0 "#PWR0127" H 5500 2950 50  0001 C CNN
@@ -213,7 +213,7 @@ Wire Wire Line
 	5050 3200 4350 3200
 Connection ~ 5050 3200
 $Comp
-L power:GND #PWR0128
+L shield_etage2-rescue:GND-power #PWR0128
 U 1 1 5E8F67E4
 P 4350 6100
 F 0 "#PWR0128" H 4350 5850 50  0001 C CNN
@@ -224,7 +224,7 @@ F 3 "" H 4350 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0131
+L shield_etage2-rescue:GND-power #PWR0131
 U 1 1 5E8F7826
 P 8200 6200
 F 0 "#PWR0131" H 8200 5950 50  0001 C CNN
@@ -240,7 +240,7 @@ Wire Wire Line
 	8200 6100 8200 6200
 Connection ~ 8200 6100
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 6 1 5E8F8F98
 P 13800 4950
 F 0 "A1" H 13800 5717 50  0000 C CNN
@@ -254,7 +254,7 @@ F 6 "13" H 13800 4950 50  0001 L BNN "Champ6"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0132
+L shield_etage2-rescue:GND-power #PWR0132
 U 1 1 5E8FE2BA
 P 14400 5550
 F 0 "#PWR0132" H 14400 5300 50  0001 C CNN
@@ -265,7 +265,7 @@ F 3 "" H 14400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0133
+L shield_etage2-rescue:GND-power #PWR0133
 U 1 1 5E8FEF08
 P 12550 5400
 F 0 "#PWR0133" H 12550 5150 50  0001 C CNN
@@ -276,7 +276,7 @@ F 3 "" H 12550 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 4 1 5E90550E
 P 12300 6350
 F 0 "A1" H 12530 6396 50  0000 L CNN
@@ -290,7 +290,7 @@ F 6 "13" H 12300 6350 50  0001 L BNN "Champ6"
 	1    0    0    -1  
 $EndComp
 $Comp
-L F401RE:NUCLEO-F401RE A1
+L shield_etage2-rescue:NUCLEO-F401RE-F401RE A1
 U 5 1 5E908B54
 P 13800 6400
 F 0 "A1" H 14030 6396 50  0000 L CNN
@@ -390,7 +390,7 @@ NoConn ~ 11900 6250
 NoConn ~ 11900 6050
 NoConn ~ 11900 5950
 $Comp
-L power:+3V3 #PWR0134
+L shield_etage2-rescue:+3V3-power #PWR0134
 U 1 1 5E93C2F8
 P 4650 2950
 F 0 "#PWR0134" H 4650 2800 50  0001 C CNN
@@ -405,7 +405,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 3000 4650 2950
 $Comp
-L power:PWR_FLAG #FLG0102
+L shield_etage2-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5E94097F
 P 4350 3000
 F 0 "#FLG0102" H 4350 3075 50  0001 C CNN

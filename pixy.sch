@@ -20,7 +20,7 @@ SPI_MISO
 Text HLabel 6000 2750 2    50   Input ~ 0
 SPI_CLK
 $Comp
-L power:+5V #PWR0122
+L shield_etage2-rescue:+5V-power #PWR0122
 U 1 1 5E8459BC
 P 5300 2350
 F 0 "#PWR0122" H 5300 2200 50  0001 C CNN
@@ -41,7 +41,7 @@ Wire Wire Line
 Text Notes 6700 3300 0    50   ~ 0
 La Pixy2 est la caméra placée sur la face avant du robot.\nElle doit permettre de distinguer ...\nElle communique avec la F4 via le protocole SPI\nSeulement 5 broches sont nécessaires pour la pixy (3 pour le SPI\n+ l'alim 5V + GND) mais elle dispose d'un connecteur 5*2\nPour des raisons de solidité du montage, on a choisi d'utiliser\négalement un connecteur 5*2 sur le shield
 $Comp
-L Device:C C11
+L shield_etage2-rescue:C-Device C11
 U 1 1 5E88A20B
 P 5150 2550
 F 0 "C11" V 4898 2550 50  0000 C CNN
@@ -52,7 +52,7 @@ F 3 "~" H 5150 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR01
+L shield_etage2-rescue:GND-power #PWR01
 U 1 1 5E88AA1B
 P 5000 2550
 F 0 "#PWR01" H 5000 2300 50  0001 C CNN
@@ -63,7 +63,7 @@ F 3 "" H 5000 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J15
+L shield_etage2-rescue:Conn_02x05_Odd_Even-Connector_Generic J15
 U 1 1 5E88593F
 P 5600 2850
 F 0 "J15" H 5650 3267 50  0000 C CNN
@@ -78,7 +78,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 2850 6000 3350
 $Comp
-L power:GND #PWR026
+L shield_etage2-rescue:GND-power #PWR026
 U 1 1 5E88CD14
 P 6000 3350
 F 0 "#PWR026" H 6000 3100 50  0001 C CNN

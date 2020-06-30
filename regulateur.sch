@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+2V8 #PWR028
+L shield_etage2-rescue:+2V8-power #PWR028
 U 1 1 5E67A02D
 P 8700 3650
 AR Path="/5E6772A8/5E67A02D" Ref="#PWR028"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 8700 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Regulator_Linear:LM317_TO3 U4
+L shield_etage2-rescue:LM317_TO3-Regulator_Linear U4
 U 1 1 5E846C10
 P 3150 3650
 AR Path="/5E6772A8/5E846C10" Ref="U4"  Part="1" 
@@ -42,7 +42,7 @@ $EndComp
 Wire Wire Line
 	2350 3650 2650 3650
 $Comp
-L Device:R R16
+L shield_etage2-rescue:R-Device R16
 U 1 1 5E846C17
 P 3600 3950
 AR Path="/5E6772A8/5E846C17" Ref="R16"  Part="1" 
@@ -55,7 +55,7 @@ F 3 "~" H 3600 3950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R17
+L shield_etage2-rescue:R-Device R17
 U 1 1 5E846C1D
 P 3600 4400
 AR Path="/5E6772A8/5E846C1D" Ref="R17"  Part="1" 
@@ -68,7 +68,7 @@ F 3 "~" H 3600 4400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C9
+L shield_etage2-rescue:C-Device C9
 U 1 1 5E846C23
 P 4150 4150
 AR Path="/5E6772A8/5E846C23" Ref="C9"  Part="1" 
@@ -81,7 +81,7 @@ F 3 "~" H 4150 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L shield_etage2-rescue:C-Device C8
 U 1 1 5E846C29
 P 2650 4200
 AR Path="/5E6772A8/5E846C29" Ref="C8"  Part="1" 
@@ -126,7 +126,7 @@ Connection ~ 3600 4150
 Wire Wire Line
 	3600 4150 3600 4250
 $Comp
-L power:GND #PWR0108
+L shield_etage2-rescue:GND-power #PWR0108
 U 1 1 5E846C41
 P 3200 4800
 AR Path="/5E6772A8/5E846C41" Ref="#PWR0108"  Part="1" 
@@ -159,7 +159,7 @@ Connection ~ 4150 3650
 Wire Wire Line
 	8200 3650 8700 3650
 $Comp
-L Device:R R10
+L shield_etage2-rescue:R-Device R10
 U 1 1 5E67CD58
 P 7650 4400
 AR Path="/5E6772A8/5E67CD58" Ref="R10"  Part="1" 
@@ -194,7 +194,7 @@ Wire Wire Line
 	7250 4800 7650 4800
 Connection ~ 7250 4800
 $Comp
-L power:GND #PWR027
+L shield_etage2-rescue:GND-power #PWR027
 U 1 1 5E67EDD3
 P 7250 4800
 AR Path="/5E6772A8/5E67EDD3" Ref="#PWR027"  Part="1" 
@@ -239,7 +239,7 @@ Connection ~ 6700 3650
 Wire Wire Line
 	6700 4050 6700 3650
 $Comp
-L Device:C C1
+L shield_etage2-rescue:C-Device C1
 U 1 1 5E67DD37
 P 6700 4200
 AR Path="/5E6772A8/5E67DD37" Ref="C1"  Part="1" 
@@ -252,7 +252,7 @@ F 3 "~" H 6700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L shield_etage2-rescue:C-Device C2
 U 1 1 5E67D126
 P 8200 4150
 AR Path="/5E6772A8/5E67D126" Ref="C2"  Part="1" 
@@ -265,7 +265,7 @@ F 3 "~" H 8200 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L shield_etage2-rescue:R-Device R9
 U 1 1 5E8486F2
 P 7650 3950
 AR Path="/5E6772A8/5E8486F2" Ref="R9"  Part="1" 
@@ -278,7 +278,7 @@ F 3 "~" H 7650 3950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:LM317_TO3 U3
+L shield_etage2-rescue:LM317_TO3-Regulator_Linear U3
 U 1 1 5E677609
 P 7200 3650
 AR Path="/5E6772A8/5E677609" Ref="U3"  Part="1" 
@@ -291,7 +291,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 7200 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0120
+L shield_etage2-rescue:+5V-power #PWR0120
 U 1 1 5E8571A1
 P 5250 3650
 F 0 "#PWR0120" H 5250 3500 50  0001 C CNN
@@ -307,7 +307,7 @@ Connection ~ 5250 3650
 Wire Wire Line
 	5250 3650 6700 3650
 $Comp
-L power:+6V #PWR?
+L shield_etage2-rescue:+6V-power #PWR?
 U 1 1 5E860379
 P 2350 3650
 AR Path="/5E860379" Ref="#PWR?"  Part="1" 
