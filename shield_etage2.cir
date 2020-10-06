@@ -1,0 +1,73 @@
+.title KiCad schematic
+J1 +6V GND Conn_01x02
+J2 ALIM_MOTEURS GND Conn_01x02
+C1 +6V GND 100n
+C2 ALIM_MOTEURS GND 100n
+H1 GND MountingHole_Pad
+H2 GND MountingHole_Pad
+H3 GND MountingHole_Pad
+H4 GND MountingHole_Pad
+R1 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF Pull
+R3 +3V3 /LevelShifter_ToF_I2C/I2C_SCL_STM32 Pull
+Q1 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SCL_STM32 BSS138
+R2 +2V8 /LevelShifter_ToF_I2C/I2C_SDA_ToF Pull
+R4 +3V3 /LevelShifter_ToF_I2C/I2C_SDA_STM32 Pull
+Q2 +2V8 /LevelShifter_ToF_I2C/I2C_SDA_ToF /LevelShifter_ToF_I2C/I2C_SDA_STM32 BSS138
+J3 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_0 GND ToF
+J4 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_1 GND ToF
+J5 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_2 GND ToF
+J6 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_3 GND ToF
+J7 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_4 GND ToF
+J8 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_5 GND ToF
+J9 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_6 GND ToF
+J10 +2V8 /LevelShifter_ToF_I2C/I2C_SCL_ToF /LevelShifter_ToF_I2C/I2C_SDA_ToF /ShiftRegister/Reset_ToF_7 GND ToF
+U1 /LevelShifter_ShiftRegister/ShiftRegister_DSAB /LevelShifter_ShiftRegister/ShiftRegister_DSAB /ShiftRegister/Reset_ToF_0 /ShiftRegister/Reset_ToF_1 /ShiftRegister/Reset_ToF_2 /ShiftRegister/Reset_ToF_3 GND /LevelShifter_ShiftRegister/ShiftRegister_CP /F4/NRST /ShiftRegister/Reset_ToF_4 /ShiftRegister/Reset_ToF_5 /ShiftRegister/Reset_ToF_6 /ShiftRegister/Reset_ToF_7 +2V8 74HC164
+C3 GND +2V8 100n
+R5 +2V8 /LevelShifter_ShiftRegister/ShiftRegister_DSAB Pull
+R7 +3V3 /LevelShifter_ShiftRegister/STM32_DSAB Pull
+Q3 +2V8 /LevelShifter_ShiftRegister/ShiftRegister_DSAB /LevelShifter_ShiftRegister/STM32_DSAB BSS138
+Q4 +2V8 /LevelShifter_ShiftRegister/ShiftRegister_CP /LevelShifter_ShiftRegister/STM32_CP BSS138
+R6 +2V8 /LevelShifter_ShiftRegister/ShiftRegister_CP Pull
+R8 +3V3 /LevelShifter_ShiftRegister/STM32_CP Pull
+U2 Net-_R10-Pad2_ +6V +5V LM317_TO3
+R9 Net-_R10-Pad2_ +5V 1k
+R10 GND Net-_R10-Pad2_ 3k
+C5 +5V GND 1µ
+C4 +6V GND 100n
+R12 GND Net-_R11-Pad1_ 300
+C6 +5V GND 100n
+C7 +2V8 GND 1µ
+R11 Net-_R11-Pad1_ +2V8 240
+U3 Net-_R11-Pad1_ +5V +2V8 LM317_TO3
+J11 /Driver_moteurs/moteur1_pin1 /Driver_moteurs/moteur1_pin2 Moteur
+J12 /Driver_moteurs/moteur3_pin1 /Driver_moteurs/moteur3_pin2 Moteur
+U5 /Driver_moteurs/PWM_bras1 /Driver_moteurs/bras1_sens_direct /Driver_moteurs/moteur1_pin1 GND GND /Driver_moteurs/moteur1_pin2 /Driver_moteurs/bras1_sens_inverse Net-_C11-Pad2_ /Driver_moteurs/PWM_bras2 /Driver_moteurs/bras2_sens_direct /Driver_moteurs/moteur2_pin1 GND GND /Driver_moteurs/moteur2_pin2 /Driver_moteurs/bras2_sens_inverse +5V L293D
+R15 +3V3 /F4/drapeau_PWM Pull
+R18 +5V /Driver_moteurs/PWM_drapeau Pull
+Q7 +3V3 /F4/drapeau_PWM /Driver_moteurs/PWM_drapeau BSS138
+U4 Net-_C11-Pad2_ ALIM_MOTEURS Net-_R19-Pad2_ LM317_TO3
+R19 Net-_C11-Pad2_ Net-_R19-Pad2_ 1.2
+C8 GND +5V 100n
+C9 GND Net-_C11-Pad2_ 100n
+U6 /Driver_moteurs/PWM_drapeau /Driver_moteurs/drapeau_sens_direct /Driver_moteurs/moteur3_pin1 GND GND /Driver_moteurs/moteur3_pin2 /Driver_moteurs/drapeau_sens_inverse Net-_C11-Pad2_ GND GND NC_01 GND GND NC_02 GND +5V L293D
+Q6 +3V3 /F4/bras2_PWM /Driver_moteurs/PWM_bras2 BSS138
+R17 +5V /Driver_moteurs/PWM_bras2 Pull
+R14 +3V3 /F4/bras2_PWM Pull
+Q5 +3V3 /F4/bras1_PWM /Driver_moteurs/PWM_bras1 BSS138
+R16 +5V /Driver_moteurs/PWM_bras1 Pull
+R13 +3V3 /F4/bras1_PWM Pull
+C11 GND Net-_C11-Pad2_ 100n
+C10 +5V GND 100n
+J13 /FinDeCourse_drapeau/STM32_GPIO GND butee
+C12 /FinDeCourse_drapeau/STM32_GPIO GND 100n
+J14 /FinDeCourse_bras/STM32_GPIO GND butee
+C13 /FinDeCourse_bras/STM32_GPIO GND 100n
+C14 +5V GND 100n
+J15 +5V /pixy/SPI_MISO /pixy/SPI_MOSI /pixy/SPI_CLK NC_03 GND NC_04 NC_05 NC_06 NC_07 Pixy
+J16 /UART_comm_f3/TX /UART_comm_f3/RX GND comm_f3
+J17 /Driver_moteurs/moteur2_pin1 /Driver_moteurs/moteur2_pin2 Moteur
+C16 /F4/NRST GND 100n
+SW1 GND /F4/NRST SW_Push
+A1 /FinDeCourse_bras/STM32_GPIO /FinDeCourse_drapeau/STM32_GPIO NC_08 /F4/drapeau_PWM NC_09 NC_10 NC_11 NC_12 GND NC_13 NC_14 NC_15 NC_16 NC_17 /Driver_moteurs/bras1_sens_direct /LevelShifter_ToF_I2C/I2C_SCL_STM32 /F4/bras1_PWM GND /UART_comm_f3/TX /Driver_moteurs/bras2_sens_inverse NC_18 /F4/bras2_PWM /Driver_moteurs/bras2_sens_direct /Driver_moteurs/drapeau_sens_inverse /pixy/SPI_MISO /Driver_moteurs/drapeau_sens_direct /pixy/SPI_CLK /Driver_moteurs/bras1_sens_inverse /pixy/SPI_MOSI GND /UART_comm_f3/RX NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 GND NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 GND GND NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 +5V NC_41 GND NC_42 NC_43 /F4/NRST NC_44 +3V3 NC_45 NC_46 GND GND /LevelShifter_ToF_I2C/I2C_SDA_STM32 GND NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 NC_57 NC_58 /LevelShifter_ShiftRegister/STM32_DSAB NC_59 /LevelShifter_ShiftRegister/STM32_CP NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 NC_67 NC_68 NC_69 NC_70 NC_71 NC_72 NC_73 NUCLEO-F401RE
+C15 +5V GND 1µ
+.end

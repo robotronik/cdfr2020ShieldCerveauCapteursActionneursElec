@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# shield_etage2-rescue_+2V8-power-shield_etage2-rescue
+# +2V8-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_+2V8-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF +2V8-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "shield_etage2-rescue_+2V8-power-shield_etage2-rescue" 0 140 50 H V C CNN
+F1 "+2V8-power-shield_etage2-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +2V8 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_+3.3V-power-shield_etage2-rescue
+# +3.3V-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_+3.3V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "shield_etage2-rescue_+3.3V-power-shield_etage2-rescue" 0 140 50 H V C CNN
+F1 "+3.3V-power-shield_etage2-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_+3V3-power-shield_etage2-rescue
+# +3V3-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_+3V3-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF +3V3-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "shield_etage2-rescue_+3V3-power-shield_etage2-rescue" 0 140 50 H V C CNN
+F1 "+3V3-power-shield_etage2-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +46,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_+5V-power-shield_etage2-rescue
+# +5V-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_+5V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF +5V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "shield_etage2-rescue_+5V-power-shield_etage2-rescue" 0 140 50 H V C CNN
+F1 "+5V-power-shield_etage2-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -61,11 +61,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_+6V-power-shield_etage2-rescue
+# +6V-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_+6V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF +6V-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "shield_etage2-rescue_+6V-power-shield_etage2-rescue" 0 140 50 H V C CNN
+F1 "+6V-power-shield_etage2-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -76,11 +76,11 @@ X +6V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_74HC164-74xx-shield_etage2-rescue
+# 74HC164-74xx-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_74HC164-74xx-shield_etage2-rescue U 0 20 Y Y 1 F N
+DEF 74HC164-74xx-shield_etage2-rescue U 0 20 Y Y 1 F N
 F0 "U" 75 -550 50 H V L CNN
-F1 "shield_etage2-rescue_74HC164-74xx-shield_etage2-rescue" 75 -650 50 H V L CNN
+F1 "74HC164-74xx-shield_etage2-rescue" 75 -650 50 H V L CNN
 F2 "" 900 -300 50 H I C CNN
 F3 "" 900 -300 50 H I C CNN
 $FPLIST
@@ -106,11 +106,11 @@ X ~MR 9 -400 200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_BSS138-Transistor_FET-shield_etage2-rescue
+# BSS138-Transistor_FET-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_BSS138-Transistor_FET-shield_etage2-rescue Q 0 0 Y N 1 F N
+DEF BSS138-Transistor_FET-shield_etage2-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "shield_etage2-rescue_BSS138-Transistor_FET-shield_etage2-rescue" 200 0 50 H V L CNN
+F1 "BSS138-Transistor_FET-shield_etage2-rescue" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -140,11 +140,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_C-Device-shield_etage2-rescue
+# C-Device-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_C-Device-shield_etage2-rescue C 0 10 N Y 1 F N
+DEF C-Device-shield_etage2-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "shield_etage2-rescue_C-Device-shield_etage2-rescue" 25 -100 50 H V L CNN
+F1 "C-Device-shield_etage2-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -158,11 +158,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_Conn_01x02-Connector_Generic-shield_etage2-rescue
+# Conn_01x02-Connector_Generic-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_Conn_01x02-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
+DEF Conn_01x02-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "shield_etage2-rescue_Conn_01x02-Connector_Generic-shield_etage2-rescue" 0 -200 50 H V C CNN
+F1 "Conn_01x02-Connector_Generic-shield_etage2-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -177,11 +177,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_Conn_01x03-Connector_Generic-shield_etage2-rescue
+# Conn_01x03-Connector_Generic-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_Conn_01x03-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
+DEF Conn_01x03-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "shield_etage2-rescue_Conn_01x03-Connector_Generic-shield_etage2-rescue" 0 -200 50 H V C CNN
+F1 "Conn_01x03-Connector_Generic-shield_etage2-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -198,11 +198,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_Conn_01x05-Connector_Generic-shield_etage2-rescue
+# Conn_01x05-Connector_Generic-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_Conn_01x05-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
+DEF Conn_01x05-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "shield_etage2-rescue_Conn_01x05-Connector_Generic-shield_etage2-rescue" 0 -300 50 H V C CNN
+F1 "Conn_01x05-Connector_Generic-shield_etage2-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -223,11 +223,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue
+# Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
+DEF Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "shield_etage2-rescue_Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue" 50 -300 50 H V C CNN
+F1 "Conn_02x05_Odd_Even-Connector_Generic-shield_etage2-rescue" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -258,11 +258,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_GND-power-shield_etage2-rescue
+# GND-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_GND-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
+DEF GND-power-shield_etage2-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "shield_etage2-rescue_GND-power-shield_etage2-rescue" 0 -150 50 H V C CNN
+F1 "GND-power-shield_etage2-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -271,11 +271,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_L293D-Driver_Motor-shield_etage2-rescue
+# L293D-Driver_Motor-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_L293D-Driver_Motor-shield_etage2-rescue U 0 40 Y Y 1 F N
+DEF L293D-Driver_Motor-shield_etage2-rescue U 0 40 Y Y 1 F N
 F0 "U" -200 1025 50 H V R CNN
-F1 "shield_etage2-rescue_L293D-Driver_Motor-shield_etage2-rescue" -200 950 50 H V R CNN
+F1 "L293D-Driver_Motor-shield_etage2-rescue" -200 950 50 H V R CNN
 F2 "Package_DIP:DIP-16_W7.62mm" 250 -750 50 H I L CNN
 F3 "" -300 700 50 H I C CNN
 $FPLIST
@@ -320,11 +320,11 @@ X EN3,4 9 -500 -400 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_LM317_TO3-Regulator_Linear-shield_etage2-rescue
+# LM317_TO3-Regulator_Linear-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_LM317_TO3-Regulator_Linear-shield_etage2-rescue U 0 10 Y Y 1 F N
+DEF LM317_TO3-Regulator_Linear-shield_etage2-rescue U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "shield_etage2-rescue_LM317_TO3-Regulator_Linear-shield_etage2-rescue" 0 125 50 H V L CNN
+F1 "LM317_TO3-Regulator_Linear-shield_etage2-rescue" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-3" 0 200 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -338,11 +338,11 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_MountingHole_Pad-Mechanical-shield_etage2-rescue
+# MountingHole_Pad-Mechanical-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_MountingHole_Pad-Mechanical-shield_etage2-rescue H 0 40 N N 1 F N
+DEF MountingHole_Pad-Mechanical-shield_etage2-rescue H 0 40 N N 1 F N
 F0 "H" 0 250 50 H V C CNN
-F1 "shield_etage2-rescue_MountingHole_Pad-Mechanical-shield_etage2-rescue" 0 175 50 H V C CNN
+F1 "MountingHole_Pad-Mechanical-shield_etage2-rescue" 0 175 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -354,11 +354,11 @@ X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_NUCLEO-F401RE-F401RE-shield_etage2-rescue
+# NUCLEO-F401RE-F401RE-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_NUCLEO-F401RE-F401RE-shield_etage2-rescue A 0 40 N Y 6 L N
+DEF NUCLEO-F401RE-F401RE-shield_etage2-rescue A 0 40 N Y 6 L N
 F0 "A" -500 1650 50 H V L BNN
-F1 "shield_etage2-rescue_NUCLEO-F401RE-F401RE-shield_etage2-rescue" -500 -1750 50 H V L BNN
+F1 "NUCLEO-F401RE-F401RE-shield_etage2-rescue" -500 -1750 50 H V L BNN
 F2 "ST_NUCLEO-F401RE" 0 0 50 H I L BNN
 F3 "STMicroelectrnonics" 0 0 50 H I L BNN
 F4 "N/A" 0 0 50 H I L BNN
@@ -491,11 +491,11 @@ X D14 CN5_9 -600 -300 200 R 40 40 6 0 B
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_PWR_FLAG-power-shield_etage2-rescue
+# PWR_FLAG-power-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_PWR_FLAG-power-shield_etage2-rescue #FLG 0 0 N N 1 F P
+DEF PWR_FLAG-power-shield_etage2-rescue #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "shield_etage2-rescue_PWR_FLAG-power-shield_etage2-rescue" 0 150 50 H V C CNN
+F1 "PWR_FLAG-power-shield_etage2-rescue" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -504,11 +504,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_R-Device-shield_etage2-rescue
+# R-Device-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_R-Device-shield_etage2-rescue R 0 0 N Y 1 F N
+DEF R-Device-shield_etage2-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "shield_etage2-rescue_R-Device-shield_etage2-rescue" 0 0 50 V V C CNN
+F1 "R-Device-shield_etage2-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -521,11 +521,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# shield_etage2-rescue_SW_Push-Switch-shield_etage2-rescue
+# SW_Push-Switch-shield_etage2-rescue
 #
-DEF shield_etage2-rescue_SW_Push-Switch-shield_etage2-rescue SW 0 40 N N 1 F N
+DEF SW_Push-Switch-shield_etage2-rescue SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "shield_etage2-rescue_SW_Push-Switch-shield_etage2-rescue" 0 -60 50 H V C CNN
+F1 "SW_Push-Switch-shield_etage2-rescue" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW

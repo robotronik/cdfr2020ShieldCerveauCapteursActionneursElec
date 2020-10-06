@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 24
+Sheet 1 23
 Title ""
 Date ""
 Rev ""
@@ -616,9 +616,7 @@ F19 "bras2_PWM" I R 10750 4800 50
 F20 "bras1_PWM" I R 10750 4500 50 
 F21 "bras2_sens_direct" I R 10750 4900 50 
 F22 "bras2_sens_inverse" I R 10750 5000 50 
-F23 "finDeCourse_bras2" I R 10750 6350 50 
-F24 "ArUco1" I L 8750 5600 50 
-F25 "ArUco2" I L 8750 5700 50 
+F23 "findeCourse_bras2" I R 10750 6350 50 
 $EndSheet
 Wire Wire Line
 	11850 4500 10750 4500
@@ -702,16 +700,4 @@ Wire Wire Line
 	11350 8100 11350 7300
 Wire Wire Line
 	11350 7300 10750 7300
-$Sheet
-S 6550 5550 1400 200 
-U 5F81CFC3
-F0 "ArU.sch" 50
-F1 "ArU.sch" 50
-F2 "ArUco1" I R 7950 5600 50 
-F3 "ArUco2" I R 7950 5700 50 
-$EndSheet
-Wire Wire Line
-	8750 5600 7950 5600
-Wire Wire Line
-	8750 5700 7950 5700
 $EndSCHEMATC

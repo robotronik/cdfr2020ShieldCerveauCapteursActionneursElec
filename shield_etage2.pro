@@ -1,4 +1,4 @@
-update=mar. 23 juin 2020 13:29:35
+update=mar. 06 oct. 2020 11:28:48
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=shield_etage2.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -240,7 +240,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.3
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
