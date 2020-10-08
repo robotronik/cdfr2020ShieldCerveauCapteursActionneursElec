@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 24
+Sheet 23 24
 Title ""
 Date ""
 Rev ""
@@ -43,7 +43,7 @@ F 3 "" H 6450 2900 50  0001 C CNN
 	1    6450 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 7450 2500 0    50   ~ 0
+Text Notes 7400 2350 0    50   ~ 0
 Les capteurs de fin de course permettent de savoir si le moteur bras \net le moteur drapeau sont arrivés au bout de leur ouverture, et éviter\n de continuer à commander les moteurs en forçant
 $Comp
 L shield_etage2-rescue:C-Device-shield_etage2-rescue C12
