@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 24
+Sheet 13 23
 Title ""
 Date ""
 Rev ""
@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR034
+L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR033
 U 1 1 5E67A02D
 P 8700 3650
-AR Path="/5E6772A8/5E67A02D" Ref="#PWR034"  Part="1" 
+AR Path="/5E6772A8/5E67A02D" Ref="#PWR033"  Part="1" 
 AR Path="/5E8305B4/5E67A02D" Ref="#PWR?"  Part="1" 
 AR Path="/5E67A02D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR034" H 8700 3500 50  0001 C CNN
+F 0 "#PWR033" H 8700 3500 50  0001 C CNN
 F 1 "+2V8" V 8715 3778 50  0000 L CNN
 F 2 "" H 8700 3650 50  0001 C CNN
 F 3 "" H 8700 3650 50  0001 C CNN
@@ -127,12 +127,12 @@ Connection ~ 3600 4150
 Wire Wire Line
 	3600 4150 3600 4250
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR031
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR030
 U 1 1 5E846C41
 P 3200 4800
-AR Path="/5E6772A8/5E846C41" Ref="#PWR031"  Part="1" 
+AR Path="/5E6772A8/5E846C41" Ref="#PWR030"  Part="1" 
 AR Path="/5E83D769/5E846C41" Ref="#PWR?"  Part="1" 
-F 0 "#PWR031" H 3200 4550 50  0001 C CNN
+F 0 "#PWR030" H 3200 4550 50  0001 C CNN
 F 1 "GND" H 3205 4627 50  0000 C CNN
 F 2 "" H 3200 4800 50  0001 C CNN
 F 3 "" H 3200 4800 50  0001 C CNN
@@ -195,12 +195,12 @@ Wire Wire Line
 	7250 4800 7650 4800
 Connection ~ 7250 4800
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR033
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR032
 U 1 1 5E67EDD3
 P 7250 4800
-AR Path="/5E6772A8/5E67EDD3" Ref="#PWR033"  Part="1" 
+AR Path="/5E6772A8/5E67EDD3" Ref="#PWR032"  Part="1" 
 AR Path="/5E8305B4/5E67EDD3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR033" H 7250 4550 50  0001 C CNN
+F 0 "#PWR032" H 7250 4550 50  0001 C CNN
 F 1 "GND" H 7255 4627 50  0000 C CNN
 F 2 "" H 7250 4800 50  0001 C CNN
 F 3 "" H 7250 4800 50  0001 C CNN
@@ -292,10 +292,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 7200 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:+5V-power-shield_etage2-rescue #PWR032
+L shield_etage2-rescue:+5V-power-shield_etage2-rescue #PWR031
 U 1 1 5E8571A1
 P 5250 3650
-F 0 "#PWR032" H 5250 3500 50  0001 C CNN
+F 0 "#PWR031" H 5250 3500 50  0001 C CNN
 F 1 "+5V" H 5265 3823 50  0000 C CNN
 F 2 "" H 5250 3650 50  0001 C CNN
 F 3 "" H 5250 3650 50  0001 C CNN
@@ -312,8 +312,8 @@ L shield_etage2-rescue:+6V-power-shield_etage2-rescue #PWR?
 U 1 1 5E860379
 P 2350 3650
 AR Path="/5E860379" Ref="#PWR?"  Part="1" 
-AR Path="/5E6772A8/5E860379" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 2350 3500 50  0001 C CNN
+AR Path="/5E6772A8/5E860379" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 2350 3500 50  0001 C CNN
 F 1 "+6V" H 2365 3823 50  0000 C CNN
 F 2 "" H 2350 3650 50  0001 C CNN
 F 3 "" H 2350 3650 50  0001 C CNN

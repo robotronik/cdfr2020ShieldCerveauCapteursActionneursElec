@@ -1,0 +1,15 @@
+do not use 2 pins for direct/reverse motors, but an hardware inverse logic door
+add a CAN to pixy camera !!!
+remove spi for pixy
+remove UART comm point
+remove capacitor before "fin de courses"
+not using PWM as enable in L293D
+add pc5, remove invert direction to three engine and refresh pinmap
+L293D 2 pin must go from "bras1_sens_direct" to PWM_bras1
+L293D 7 pin must go from "bras1_sens_indirect" to direction_bras1
+L293D 1 pin must go from "pwm_bras1" to 1. (exemple putting +5v from pin 16)
+level shifters +3.3V -> +5V (pwm) are now unnecessary
+make MUCH wider tracks for power supply(at least 0.42mm)
+rename comments on board according to modifications
+remove LM317 and R19(associated resistance)
+remove mounting holes in schematcs

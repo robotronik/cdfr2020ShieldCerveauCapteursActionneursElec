@@ -33,18 +33,18 @@ F 3 "~" H 5250 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR010
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR09
 U 1 1 5E6859B3
 P 4900 3650
-AR Path="/5E678883/5E6859B3" Ref="#PWR010"  Part="1" 
-AR Path="/5E688559/5E6859B3" Ref="#PWR012"  Part="1" 
-AR Path="/5E688F3B/5E6859B3" Ref="#PWR014"  Part="1" 
-AR Path="/5E689251/5E6859B3" Ref="#PWR016"  Part="1" 
-AR Path="/5E68B65A/5E6859B3" Ref="#PWR018"  Part="1" 
-AR Path="/5E68B65F/5E6859B3" Ref="#PWR020"  Part="1" 
-AR Path="/5E68B664/5E6859B3" Ref="#PWR022"  Part="1" 
-AR Path="/5E68B669/5E6859B3" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 4900 3400 50  0001 C CNN
+AR Path="/5E678883/5E6859B3" Ref="#PWR09"  Part="1" 
+AR Path="/5E688559/5E6859B3" Ref="#PWR011"  Part="1" 
+AR Path="/5E688F3B/5E6859B3" Ref="#PWR013"  Part="1" 
+AR Path="/5E689251/5E6859B3" Ref="#PWR015"  Part="1" 
+AR Path="/5E68B65A/5E6859B3" Ref="#PWR017"  Part="1" 
+AR Path="/5E68B65F/5E6859B3" Ref="#PWR019"  Part="1" 
+AR Path="/5E68B664/5E6859B3" Ref="#PWR021"  Part="1" 
+AR Path="/5E68B669/5E6859B3" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 4900 3400 50  0001 C CNN
 F 1 "GND" V 4905 3522 50  0000 R CNN
 F 2 "" H 4900 3650 50  0001 C CNN
 F 3 "" H 4900 3650 50  0001 C CNN
@@ -52,19 +52,19 @@ F 3 "" H 4900 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR09
+L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR08
 U 1 1 5E686310
 P 4900 3250
-AR Path="/5E678883/5E686310" Ref="#PWR09"  Part="1" 
-AR Path="/5E688559/5E686310" Ref="#PWR011"  Part="1" 
-AR Path="/5E688F3B/5E686310" Ref="#PWR013"  Part="1" 
-AR Path="/5E689251/5E686310" Ref="#PWR015"  Part="1" 
-AR Path="/5E68B65A/5E686310" Ref="#PWR017"  Part="1" 
-AR Path="/5E68B65F/5E686310" Ref="#PWR019"  Part="1" 
-AR Path="/5E68B664/5E686310" Ref="#PWR021"  Part="1" 
-AR Path="/5E68B669/5E686310" Ref="#PWR023"  Part="1" 
+AR Path="/5E678883/5E686310" Ref="#PWR08"  Part="1" 
+AR Path="/5E688559/5E686310" Ref="#PWR010"  Part="1" 
+AR Path="/5E688F3B/5E686310" Ref="#PWR012"  Part="1" 
+AR Path="/5E689251/5E686310" Ref="#PWR014"  Part="1" 
+AR Path="/5E68B65A/5E686310" Ref="#PWR016"  Part="1" 
+AR Path="/5E68B65F/5E686310" Ref="#PWR018"  Part="1" 
+AR Path="/5E68B664/5E686310" Ref="#PWR020"  Part="1" 
+AR Path="/5E68B669/5E686310" Ref="#PWR022"  Part="1" 
 AR Path="/5E686310" Ref="#PWR?"  Part="1" 
-F 0 "#PWR023" H 4900 3100 50  0001 C CNN
+F 0 "#PWR022" H 4900 3100 50  0001 C CNN
 F 1 "+2V8" V 4915 3378 50  0000 L CNN
 F 2 "" H 4900 3250 50  0001 C CNN
 F 3 "" H 4900 3250 50  0001 C CNN

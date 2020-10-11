@@ -42,10 +42,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 4050 4850 4050
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR026
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR025
 U 1 1 5E67AFE4
 P 6050 4350
-F 0 "#PWR026" H 6050 4100 50  0001 C CNN
+F 0 "#PWR025" H 6050 4100 50  0001 C CNN
 F 1 "GND" H 6055 4177 50  0000 C CNN
 F 2 "" H 6050 4350 50  0001 C CNN
 F 3 "" H 6050 4350 50  0001 C CNN
@@ -57,8 +57,8 @@ L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR?
 U 1 1 5E67E563
 P 6050 2950
 AR Path="/5E67E563" Ref="#PWR?"  Part="1" 
-AR Path="/5E627338/5E67E563" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 6050 2800 50  0001 C CNN
+AR Path="/5E627338/5E67E563" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 6050 2800 50  0001 C CNN
 F 1 "+2V8" H 6065 3123 50  0000 C CNN
 F 2 "" H 6050 2950 50  0001 C CNN
 F 3 "" H 6050 2950 50  0001 C CNN
@@ -126,10 +126,10 @@ Connection ~ 6050 3100
 Wire Wire Line
 	6050 3100 6050 3250
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR027
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR026
 U 1 1 5E833001
 P 6350 3100
-F 0 "#PWR027" H 6350 2850 50  0001 C CNN
+F 0 "#PWR026" H 6350 2850 50  0001 C CNN
 F 1 "GND" V 6355 2972 50  0000 R CNN
 F 2 "" H 6350 3100 50  0001 C CNN
 F 3 "" H 6350 3100 50  0001 C CNN

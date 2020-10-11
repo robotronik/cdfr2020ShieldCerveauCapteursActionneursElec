@@ -323,7 +323,7 @@ F 3 "~" H 7850 2350 50  0001 C CNN
 	1    7850 2350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7850 3150 3    50   Input ~ 0
+Text GLabel 7850 3150 3    50   Output ~ 0
 ALIM_MOTEURS
 $Comp
 L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR03
@@ -410,21 +410,18 @@ S 11850 4400 1550 950
 U 5E6AC71D
 F0 "Driver_moteurs" 50
 F1 "Driver_moteurs.sch" 50
-F2 "bras1_sens_direct" I L 11850 4600 50 
-F3 "bras1_sens_inverse" I L 11850 4700 50 
-F4 "drapeau_sens_direct" I L 11850 5200 50 
-F5 "drapeau_sens_inverse" I L 11850 5300 50 
-F6 "moteur1_pin1" I R 13400 4600 50 
-F7 "moteur2_pin2" I R 13400 4950 50 
-F8 "moteur1_pin2" I R 13400 4700 50 
-F9 "moteur2_pin1" I R 13400 4850 50 
-F10 "pwm_bras1_enable" I L 11850 4500 50 
-F11 "pwm_drapeau_enable" I L 11850 5100 50 
-F12 "bras2_sens_direct" I L 11850 4900 50 
-F13 "bras2_sens_inverse" I L 11850 5000 50 
-F14 "moteur3_pin1" I R 13400 5100 50 
-F15 "moteur3_pin2" I R 13400 5200 50 
-F16 "pwm_bras2_enable" I L 11850 4800 50 
+F2 "sens_bras1" I L 11850 4600 50 
+F3 "sens_drapeau" I L 11850 5200 50 
+F4 "moteur1_pin1" I R 13400 4600 50 
+F5 "moteur2_pin2" I R 13400 4950 50 
+F6 "moteur1_pin2" I R 13400 4700 50 
+F7 "moteur2_pin1" I R 13400 4850 50 
+F8 "pwm_bras1" I L 11850 4500 50 
+F9 "pwm_drapeau" I L 11850 5100 50 
+F10 "sens_bras2" I L 11850 4900 50 
+F11 "moteur3_pin1" I R 13400 5100 50 
+F12 "moteur3_pin2" I R 13400 5200 50 
+F13 "pwm_bras2" I L 11850 4800 50 
 $EndSheet
 Text Notes 11650 4050 0    50   ~ 0
 quadruple demi pont en H pour le \ncontrôle des moteurs\n
@@ -439,81 +436,6 @@ F0 "FinDeCourse_bras1" 50
 F1 "FinDeCourse.sch" 50
 F2 "STM32_GPIO" I L 11800 5850 50 
 $EndSheet
-$Sheet
-S 11850 7700 850  600 
-U 5E845744
-F0 "pixy" 50
-F1 "pixy.sch" 50
-F2 "SPI_MOSI" I L 11850 7900 50 
-F3 "SPI_MISO" I L 11850 8000 50 
-F4 "SPI_CLK" I L 11850 8100 50 
-$EndSheet
-$Comp
-L shield_etage2-rescue:MountingHole_Pad-Mechanical-shield_etage2-rescue H1
-U 1 1 5E81B7D6
-P 14800 2250
-F 0 "H1" V 14754 2400 50  0000 L CNN
-F 1 "MountingHole_Pad" V 14845 2400 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 14800 2250 50  0001 C CNN
-F 3 "~" H 14800 2250 50  0001 C CNN
-	1    14800 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L shield_etage2-rescue:MountingHole_Pad-Mechanical-shield_etage2-rescue H2
-U 1 1 5E81C6C2
-P 14800 2450
-F 0 "H2" V 14754 2600 50  0000 L CNN
-F 1 "MountingHole_Pad" V 14845 2600 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 14800 2450 50  0001 C CNN
-F 3 "~" H 14800 2450 50  0001 C CNN
-	1    14800 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L shield_etage2-rescue:MountingHole_Pad-Mechanical-shield_etage2-rescue H3
-U 1 1 5E81F44B
-P 14800 2650
-F 0 "H3" V 14754 2800 50  0000 L CNN
-F 1 "MountingHole_Pad" V 14845 2800 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 14800 2650 50  0001 C CNN
-F 3 "~" H 14800 2650 50  0001 C CNN
-	1    14800 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L shield_etage2-rescue:MountingHole_Pad-Mechanical-shield_etage2-rescue H4
-U 1 1 5E81F451
-P 14800 2850
-F 0 "H4" V 14754 3000 50  0000 L CNN
-F 1 "MountingHole_Pad" V 14845 3000 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 14800 2850 50  0001 C CNN
-F 3 "~" H 14800 2850 50  0001 C CNN
-	1    14800 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14700 2250 14700 2450
-Wire Wire Line
-	14700 2450 14700 2650
-Connection ~ 14700 2450
-Wire Wire Line
-	14700 2650 14700 2850
-Connection ~ 14700 2650
-Connection ~ 14700 2850
-Wire Wire Line
-	14700 2850 14700 3000
-$Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR06
-U 1 1 5E82CE64
-P 14700 3000
-F 0 "#PWR06" H 14700 2750 50  0001 C CNN
-F 1 "GND" H 14705 2827 50  0000 C CNN
-F 2 "" H 14700 3000 50  0001 C CNN
-F 3 "" H 14700 3000 50  0001 C CNN
-	1    14700 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 2750 6300 3050
 Connection ~ 6300 3050
@@ -525,18 +447,6 @@ Wire Wire Line
 	6100 5150 6550 5150
 Text Notes 5850 2100 0    50   ~ 0
 Entrée de puissance de la carte. On sépare l'entrée de puissance des\nmoteurs du reste, simplement pour éviter que toute la puissance du\nshield soit morte si les moteurs grillent
-$Sheet
-S 6550 6800 1350 300 
-U 5E87EAD4
-F0 "UART_comm_f3" 50
-F1 "UART.sch" 50
-F2 "TX" I R 7900 6900 50 
-F3 "RX" I R 7900 7000 50 
-$EndSheet
-Wire Wire Line
-	7900 6900 8750 6900
-Wire Wire Line
-	8750 7000 7900 7000
 Wire Wire Line
 	6500 2550 6500 3050
 Wire Wire Line
@@ -602,42 +512,32 @@ F5 "ToF_Reset_Shift" I L 8750 5250 50
 F6 "ToF_Reset_Data" I L 8750 5150 50 
 F7 "finDeCourse_bras1" I R 10750 5850 50 
 F8 "finDeCourse_drapeau" I R 10750 6850 50 
-F9 "pixy_spi_clk" I R 10750 7100 50 
-F10 "pixy_spi_miso" I R 10750 7200 50 
-F11 "pixy_spi_mosi" I R 10750 7300 50 
-F12 "drapeau_sens_direct" I R 10750 5200 50 
-F13 "bras1_sens_direct" I R 10750 4600 50 
-F14 "drapeau_sens_inverse" I R 10750 5300 50 
-F15 "bras1_sens_inverse" I R 10750 4700 50 
-F16 "drapeau_PWM" I R 10750 5100 50 
-F17 "comm_f3_tx" I L 8750 6900 50 
-F18 "comm_f3_rx" I L 8750 7000 50 
-F19 "bras2_PWM" I R 10750 4800 50 
-F20 "bras1_PWM" I R 10750 4500 50 
-F21 "bras2_sens_direct" I R 10750 4900 50 
-F22 "bras2_sens_inverse" I R 10750 5000 50 
-F23 "finDeCourse_bras2" I R 10750 6350 50 
-F24 "ArUco1" I L 8750 5600 50 
-F25 "ArUco2" I L 8750 5700 50 
+F9 "sens_drapeau" I R 10750 5200 50 
+F10 "sens_bras1" I R 10750 4600 50 
+F11 "pwm_drapeau" I R 10750 5100 50 
+F12 "pwm_bras2" I R 10750 4800 50 
+F13 "pwm_bras1" I R 10750 4500 50 
+F14 "sens_bras2" I R 10750 4900 50 
+F15 "finDeCourse_bras2" I R 10750 6350 50 
+F16 "ArUco1" I L 8750 6650 50 
+F17 "ArUco2" I L 8750 6750 50 
+F18 "CAN1_RX" I L 8750 7050 50 
+F19 "CAN1_TX" I L 8750 7150 50 
+F20 "CAN1_RX" I R 10750 7200 50 
+F21 "CAN1_TX" I R 10750 7300 50 
 $EndSheet
 Wire Wire Line
 	11850 4500 10750 4500
 Wire Wire Line
 	10750 4600 11850 4600
 Wire Wire Line
-	11850 4700 10750 4700
-Wire Wire Line
 	10750 4800 11850 4800
 Wire Wire Line
 	11850 4900 10750 4900
 Wire Wire Line
-	10750 5000 11850 5000
-Wire Wire Line
 	11850 5100 10750 5100
 Wire Wire Line
 	10750 5200 11850 5200
-Wire Wire Line
-	11850 5300 10750 5300
 Wire Wire Line
 	13400 4850 13950 4850
 Wire Wire Line
@@ -685,33 +585,47 @@ Wire Wire Line
 Wire Wire Line
 	11800 6350 10750 6350
 Wire Wire Line
-	11850 7900 11550 7900
+	8750 6650 7950 6650
 Wire Wire Line
-	11550 7900 11550 7100
+	8750 6750 7950 6750
 Wire Wire Line
-	11550 7100 10750 7100
+	8750 7050 7950 7050
 Wire Wire Line
-	10750 7200 11450 7200
-Wire Wire Line
-	11450 7200 11450 8000
-Wire Wire Line
-	11450 8000 11850 8000
-Wire Wire Line
-	11850 8100 11350 8100
-Wire Wire Line
-	11350 8100 11350 7300
-Wire Wire Line
-	11350 7300 10750 7300
+	8750 7150 7950 7150
 $Sheet
-S 6550 5550 1400 200 
+S 6550 7000 1400 200 
+U 5F882FF7
+F0 "CAN1" 50
+F1 "CAN.sch" 50
+F2 "CAN1_RX" I R 7950 7050 50 
+F3 "CAN1_TX" I R 7950 7150 50 
+$EndSheet
+$Sheet
+S 6550 6600 1400 200 
 U 5F81CFC3
-F0 "ArU.sch" 50
-F1 "ArU.sch" 50
-F2 "ArUco1" I R 7950 5600 50 
-F3 "ArUco2" I R 7950 5700 50 
+F0 "ArUco.sch" 50
+F1 "ArUco.sch" 50
+F2 "ArUco1" I R 7950 6650 50 
+F3 "ArUco2" I R 7950 6750 50 
+$EndSheet
+$Sheet
+S 11800 7250 900  450 
+U 5F844B5D
+F0 "transceiver" 50
+F1 "transceiver.sch" 50
+F2 "CAN1_RX" I L 11800 7400 50 
+F3 "CAN1_TX" I L 11800 7500 50 
 $EndSheet
 Wire Wire Line
-	8750 5600 7950 5600
+	11350 7200 11350 7400
 Wire Wire Line
-	8750 5700 7950 5700
+	11350 7400 11800 7400
+Wire Wire Line
+	10750 7200 11350 7200
+Wire Wire Line
+	11250 7500 11250 7300
+Wire Wire Line
+	11250 7300 10750 7300
+Wire Wire Line
+	11250 7500 11800 7500
 $EndSCHEMATC

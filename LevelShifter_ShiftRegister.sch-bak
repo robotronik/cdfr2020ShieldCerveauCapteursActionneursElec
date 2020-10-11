@@ -134,8 +134,8 @@ L shield_etage2-rescue:+2V8-power-shield_etage2-rescue #PWR?
 U 1 1 5E669CBC
 P 3600 3200
 AR Path="/5E669CBC" Ref="#PWR?"  Part="1" 
-AR Path="/5E66627C/5E669CBC" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 3600 3050 50  0001 C CNN
+AR Path="/5E66627C/5E669CBC" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 3600 3050 50  0001 C CNN
 F 1 "+2V8" H 3615 3373 50  0000 C CNN
 F 2 "" H 3600 3200 50  0001 C CNN
 F 3 "" H 3600 3200 50  0001 C CNN
@@ -143,10 +143,10 @@ F 3 "" H 3600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:+3V3-power-shield_etage2-rescue #PWR029
+L shield_etage2-rescue:+3V3-power-shield_etage2-rescue #PWR028
 U 1 1 5E66B01C
 P 6850 3200
-F 0 "#PWR029" H 6850 3050 50  0001 C CNN
+F 0 "#PWR028" H 6850 3050 50  0001 C CNN
 F 1 "+3V3" H 6865 3373 50  0000 C CNN
 F 2 "" H 6850 3200 50  0001 C CNN
 F 3 "" H 6850 3200 50  0001 C CNN

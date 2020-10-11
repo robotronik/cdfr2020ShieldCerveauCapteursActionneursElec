@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 21 24
+Sheet 19 23
 Title ""
 Date ""
 Rev ""
@@ -20,17 +20,9 @@ ToF_Reset_Shift
 Text HLabel 2950 5100 0    50   Input ~ 0
 ToF_Reset_Data
 Text HLabel 6800 5700 0    50   Input ~ 0
-drapeau_sens_direct
+sens_drapeau
 Text HLabel 6800 5500 0    50   Input ~ 0
-bras1_sens_direct
-Text HLabel 6800 5800 0    50   Input ~ 0
-drapeau_sens_inverse
-Text HLabel 6800 5600 0    50   Input ~ 0
-bras1_sens_inverse
-Text HLabel 6800 4100 0    50   Input ~ 0
-comm_f3_tx
-Text HLabel 6800 4200 0    50   Input ~ 0
-comm_f3_rx
+sens_bras1
 Text HLabel 13250 1950 0    50   Input ~ 0
 NRST
 $Comp
@@ -38,8 +30,8 @@ L shield_etage2-rescue:C-Device-shield_etage2-rescue C?
 U 1 1 5E81E95C
 P 14300 2250
 AR Path="/5E811168/5E81E95C" Ref="C?"  Part="1" 
-AR Path="/5E6933BA/5E81E95C" Ref="C16"  Part="1" 
-F 0 "C16" H 14415 2296 50  0000 L CNN
+AR Path="/5E6933BA/5E81E95C" Ref="C13"  Part="1" 
+F 0 "C13" H 14415 2296 50  0000 L CNN
 F 1 "100n" H 14415 2205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14338 2100 50  0001 C CNN
 F 3 "~" H 14300 2250 50  0001 C CNN
@@ -51,8 +43,8 @@ L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR?
 U 1 1 5E81E962
 P 14300 2400
 AR Path="/5E811168/5E81E962" Ref="#PWR?"  Part="1" 
-AR Path="/5E6933BA/5E81E962" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 14300 2150 50  0001 C CNN
+AR Path="/5E6933BA/5E81E962" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 14300 2150 50  0001 C CNN
 F 1 "GND" H 14305 2227 50  0000 C CNN
 F 2 "" H 14300 2400 50  0001 C CNN
 F 3 "" H 14300 2400 50  0001 C CNN
@@ -64,8 +56,8 @@ L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR?
 U 1 1 5E81E968
 P 13800 2400
 AR Path="/5E811168/5E81E968" Ref="#PWR?"  Part="1" 
-AR Path="/5E6933BA/5E81E968" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 13800 2150 50  0001 C CNN
+AR Path="/5E6933BA/5E81E968" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 13800 2150 50  0001 C CNN
 F 1 "GND" H 13805 2227 50  0000 C CNN
 F 2 "" H 13800 2400 50  0001 C CNN
 F 3 "" H 13800 2400 50  0001 C CNN
@@ -95,8 +87,6 @@ Text Notes 13400 1800 0    50   ~ 0
 On rajoute un bouton pour reset la carte\nainsi que le registre à décalage\nComme on la place au-dessus de la f4, \non n'a plus accès au bouton\nreset de la nucleo\n
 Text Notes 2100 5100 0    50   ~ 0
 PC0\nPC1\n
-Text Notes 6050 4250 0    50   ~ 0
-PA9\nPA10\n
 Text Notes 5700 5800 0    50   ~ 0
 PB12\nPB13\nPB14\nPB15
 Connection ~ 13800 1950
@@ -128,14 +118,6 @@ F 6 "13" H 7500 4600 50  0001 L BNN "Champ6"
 	2    7500 4600
 	1    0    0    -1  
 $EndComp
-Text Notes 6000 5150 0    50   ~ 0
-PB3\nPB4\nPB5\nPB6\n
-Text HLabel 6800 5000 0    50   Input ~ 0
-pixy_spi_mosi
-Text HLabel 6800 4900 0    50   Input ~ 0
-pixy_spi_miso
-Text HLabel 6800 4800 0    50   Input ~ 0
-pixy_spi_clk
 Text HLabel 6800 5100 0    50   Input ~ 0
 I2C_ToF_SCL
 Text HLabel 2950 4800 0    50   Input ~ 0
@@ -165,18 +147,18 @@ finDeCourse_bras1
 Text Notes 8750 3750 0    50   ~ 0
 PC6\n
 Text HLabel 8200 3700 2    50   Input ~ 0
-drapeau_PWM
+pwm_drapeau
 Text Notes 8650 3850 0    50   ~ 0
 PC7\n
 Text HLabel 8200 3800 2    50   Input ~ 0
-bras1_PWM
+pwm_bras1
 Text Notes 2250 4850 0    50   ~ 0
 PB7\n
 $Comp
-L shield_etage2-rescue:+5V-power-shield_etage2-rescue #PWR062
+L shield_etage2-rescue:+5V-power-shield_etage2-rescue #PWR051
 U 1 1 5E8EEA6E
 P 5050 3150
-F 0 "#PWR062" H 5050 3000 50  0001 C CNN
+F 0 "#PWR051" H 5050 3000 50  0001 C CNN
 F 1 "+5V" H 5065 3323 50  0000 C CNN
 F 2 "" H 5050 3150 50  0001 C CNN
 F 3 "" H 5050 3150 50  0001 C CNN
@@ -184,10 +166,10 @@ F 3 "" H 5050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:C-Device-shield_etage2-rescue C15
+L shield_etage2-rescue:C-Device-shield_etage2-rescue C12
 U 1 1 5E8F04FC
 P 5350 3200
-F 0 "C15" V 5602 3200 50  0000 C CNN
+F 0 "C12" V 5602 3200 50  0000 C CNN
 F 1 "1µ" V 5511 3200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5388 3050 50  0001 C CNN
 F 3 "~" H 5350 3200 50  0001 C CNN
@@ -195,10 +177,10 @@ F 3 "~" H 5350 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR063
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR052
 U 1 1 5E8F1C24
 P 5500 3200
-F 0 "#PWR063" H 5500 2950 50  0001 C CNN
+F 0 "#PWR052" H 5500 2950 50  0001 C CNN
 F 1 "GND" V 5505 3072 50  0000 R CNN
 F 2 "" H 5500 3200 50  0001 C CNN
 F 3 "" H 5500 3200 50  0001 C CNN
@@ -213,10 +195,10 @@ Wire Wire Line
 	5050 3200 4350 3200
 Connection ~ 5050 3200
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR060
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR049
 U 1 1 5E8F67E4
 P 4350 6100
-F 0 "#PWR060" H 4350 5850 50  0001 C CNN
+F 0 "#PWR049" H 4350 5850 50  0001 C CNN
 F 1 "GND" H 4355 5927 50  0000 C CNN
 F 2 "" H 4350 6100 50  0001 C CNN
 F 3 "" H 4350 6100 50  0001 C CNN
@@ -224,10 +206,10 @@ F 3 "" H 4350 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR064
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR053
 U 1 1 5E8F7826
 P 8200 6200
-F 0 "#PWR064" H 8200 5950 50  0001 C CNN
+F 0 "#PWR053" H 8200 5950 50  0001 C CNN
 F 1 "GND" H 8205 6027 50  0000 C CNN
 F 2 "" H 8200 6200 50  0001 C CNN
 F 3 "" H 8200 6200 50  0001 C CNN
@@ -254,10 +236,10 @@ F 6 "13" H 13800 4950 50  0001 L BNN "Champ6"
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR068
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR057
 U 1 1 5E8FE2BA
 P 14400 5550
-F 0 "#PWR068" H 14400 5300 50  0001 C CNN
+F 0 "#PWR057" H 14400 5300 50  0001 C CNN
 F 1 "GND" H 14405 5377 50  0000 C CNN
 F 2 "" H 14400 5550 50  0001 C CNN
 F 3 "" H 14400 5550 50  0001 C CNN
@@ -265,10 +247,10 @@ F 3 "" H 14400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR065
+L shield_etage2-rescue:GND-power-shield_etage2-rescue #PWR054
 U 1 1 5E8FEF08
 P 12550 5400
-F 0 "#PWR065" H 12550 5150 50  0001 C CNN
+F 0 "#PWR054" H 12550 5150 50  0001 C CNN
 F 1 "GND" H 12555 5227 50  0000 C CNN
 F 2 "" H 12550 5400 50  0001 C CNN
 F 3 "" H 12550 5400 50  0001 C CNN
@@ -353,8 +335,6 @@ NoConn ~ 2950 5500
 NoConn ~ 2950 5700
 NoConn ~ 2950 5800
 NoConn ~ 2950 5900
-NoConn ~ 6800 5300
-NoConn ~ 6800 5200
 NoConn ~ 11350 5100
 NoConn ~ 11350 5200
 NoConn ~ 12550 4700
@@ -384,10 +364,10 @@ NoConn ~ 11900 6250
 NoConn ~ 11900 6050
 NoConn ~ 11900 5950
 $Comp
-L shield_etage2-rescue:+3V3-power-shield_etage2-rescue #PWR061
+L shield_etage2-rescue:+3V3-power-shield_etage2-rescue #PWR050
 U 1 1 5E93C2F8
 P 4650 2950
-F 0 "#PWR061" H 4650 2800 50  0001 C CNN
+F 0 "#PWR050" H 4650 2800 50  0001 C CNN
 F 1 "+3V3" H 4665 3123 50  0000 C CNN
 F 2 "" H 4650 2950 50  0001 C CNN
 F 3 "" H 4650 2950 50  0001 C CNN
@@ -399,10 +379,10 @@ Wire Wire Line
 Wire Wire Line
 	4650 3000 4650 2950
 $Comp
-L shield_etage2-rescue:PWR_FLAG-power-shield_etage2-rescue #FLG05
+L shield_etage2-rescue:PWR_FLAG-power-shield_etage2-rescue #FLG04
 U 1 1 5E94097F
 P 4350 3000
-F 0 "#FLG05" H 4350 3075 50  0001 C CNN
+F 0 "#FLG04" H 4350 3075 50  0001 C CNN
 F 1 "PWR_FLAG" H 4350 3173 50  0000 C CNN
 F 2 "" H 4350 3000 50  0001 C CNN
 F 3 "~" H 4350 3000 50  0001 C CNN
@@ -418,11 +398,21 @@ ArUco1
 Text HLabel 6800 4400 0    50   Input ~ 0
 ArUco2
 Text HLabel 6800 4600 0    50   Input ~ 0
-bras2_PWM
-Text HLabel 6800 4700 0    50   Input ~ 0
-bras2_sens_inverse
+pwm_bras2
 Text HLabel 6800 5400 0    50   Input ~ 0
-bras2_sens_direct
+sens_bras2
 Text HLabel 8200 3600 2    50   Input ~ 0
 finDeCourse_bras2
+NoConn ~ 6800 4100
+NoConn ~ 6800 4200
+Text HLabel 6800 5300 0    50   Input ~ 0
+CAN1_TX
+Text HLabel 6800 5200 0    50   Input ~ 0
+CAN1_RX
+NoConn ~ 6800 4800
+NoConn ~ 6800 4900
+NoConn ~ 6800 5000
+NoConn ~ 6800 4700
+NoConn ~ 6800 5600
+NoConn ~ 6800 5800
 $EndSCHEMATC
