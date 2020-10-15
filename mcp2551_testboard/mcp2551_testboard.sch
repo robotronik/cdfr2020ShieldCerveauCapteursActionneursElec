@@ -1,0 +1,262 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:MCP2551-I-P U1
+U 1 1 5F8315C8
+P 5800 3750
+F 0 "U1" H 5800 4550 50  0000 C CNN
+F 1 "MCP2551-I-P" H 5800 4450 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5800 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F836A87
+P 5100 4100
+F 0 "R3" H 5170 4146 50  0000 L CNN
+F 1 "10k" H 5170 4055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5030 4100 50  0001 C CNN
+F 3 "~" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5F83705D
+P 5100 4250
+F 0 "#PWR03" H 5100 4000 50  0001 C CNN
+F 1 "GND" H 5105 4077 50  0000 C CNN
+F 2 "" H 5100 4250 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F837B01
+P 5800 4250
+F 0 "#PWR05" H 5800 4000 50  0001 C CNN
+F 1 "GND" H 5805 4077 50  0000 C CNN
+F 2 "" H 5800 4250 50  0001 C CNN
+F 3 "" H 5800 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4150 5800 4250
+Wire Wire Line
+	5300 3950 5100 3950
+$Comp
+L power:+5V #PWR04
+U 1 1 5F838EDA
+P 5800 3300
+F 0 "#PWR04" H 5800 3150 50  0001 C CNN
+F 1 "+5V" H 5815 3473 50  0000 C CNN
+F 2 "" H 5800 3300 50  0001 C CNN
+F 3 "" H 5800 3300 50  0001 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3650 6550 3650
+Wire Wire Line
+	6300 3850 6550 3850
+Wire Wire Line
+	5300 3850 4500 3850
+$Comp
+L power:+5V #PWR01
+U 1 1 5F83CF37
+P 4500 3350
+F 0 "#PWR01" H 4500 3200 50  0001 C CNN
+F 1 "+5V" H 4515 3523 50  0000 C CNN
+F 2 "" H 4500 3350 50  0001 C CNN
+F 3 "" H 4500 3350 50  0001 C CNN
+	1    4500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3350 4500 3400
+$Comp
+L Device:C C1
+U 1 1 5F85CFB6
+P 6000 3350
+F 0 "C1" V 5748 3350 50  0000 C CNN
+F 1 "100n" V 5839 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 6038 3200 50  0001 C CNN
+F 3 "~" H 6000 3350 50  0001 C CNN
+	1    6000 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F86109F
+P 6200 3350
+F 0 "#PWR06" H 6200 3100 50  0001 C CNN
+F 1 "GND" H 6205 3177 50  0000 C CNN
+F 2 "" H 6200 3350 50  0001 C CNN
+F 3 "" H 6200 3350 50  0001 C CNN
+	1    6200 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3350 6150 3350
+Wire Wire Line
+	5850 3350 5800 3350
+Wire Wire Line
+	5800 3350 5800 3300
+Connection ~ 5800 3350
+Text Notes 4050 3000 0    50   ~ 0
+pont diviseur pour Vref = 2.5V\nVref consomme 50uA max
+$Comp
+L Device:R R4
+U 1 1 5F867449
+P 6750 3750
+F 0 "R4" H 6820 3796 50  0000 L CNN
+F 1 "120" H 6820 3705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6680 3750 50  0001 C CNN
+F 3 "~" H 6750 3750 50  0001 C CNN
+	1    6750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3650 6550 3600
+Wire Wire Line
+	6550 3600 6750 3600
+Connection ~ 6750 3600
+Wire Wire Line
+	6750 3900 6550 3900
+Wire Wire Line
+	6550 3900 6550 3850
+Connection ~ 6750 3900
+Text Notes 6600 3400 0    50   ~ 0
+Résistance de 120 Ohms en bout de bus \n(OPTIONNEL, ne pas souder par défaut)
+Text Notes 4750 4800 0    50   ~ 0
+Résistance de slew rate,\nvérifier la datasheet
+$Comp
+L power:GND #PWR02
+U 1 1 5F86CC67
+P 4500 4250
+F 0 "#PWR02" H 4500 4000 50  0001 C CNN
+F 1 "GND" H 4505 4077 50  0000 C CNN
+F 2 "" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F888341
+P 4500 3700
+F 0 "R1" H 4570 3746 50  0000 L CNN
+F 1 "470" H 4570 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4430 3700 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F888FF2
+P 4500 4000
+F 0 "R2" H 4570 4046 50  0000 L CNN
+F 1 "470" H 4570 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4430 4000 50  0001 C CNN
+F 3 "~" H 4500 4000 50  0001 C CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3600 7450 3600
+Wire Wire Line
+	7050 3900 7050 3700
+Wire Wire Line
+	7050 3700 7450 3700
+Wire Wire Line
+	7050 3900 6750 3900
+$Comp
+L power:+5V #PWR07
+U 1 1 5F88DDD6
+P 7450 3800
+F 0 "#PWR07" H 7450 3650 50  0001 C CNN
+F 1 "+5V" H 7465 3973 50  0000 C CNN
+F 2 "" H 7450 3800 50  0001 C CNN
+F 3 "" H 7450 3800 50  0001 C CNN
+	1    7450 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F88F591
+P 7450 3900
+F 0 "#PWR08" H 7450 3650 50  0001 C CNN
+F 1 "GND" H 7455 3727 50  0000 C CNN
+F 2 "" H 7450 3900 50  0001 C CNN
+F 3 "" H 7450 3900 50  0001 C CNN
+	1    7450 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F8910C6
+P 4500 3400
+F 0 "#FLG01" H 4500 3475 50  0001 C CNN
+F 1 "PWR_FLAG" V 4500 3527 50  0000 L CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "~" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4500 3400
+Wire Wire Line
+	4500 3400 4500 3550
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F892408
+P 4500 4200
+F 0 "#FLG02" H 4500 4275 50  0001 C CNN
+F 1 "PWR_FLAG" V 4500 4327 50  0000 L CNN
+F 2 "" H 4500 4200 50  0001 C CNN
+F 3 "~" H 4500 4200 50  0001 C CNN
+	1    4500 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 4150 4500 4200
+Connection ~ 4500 4200
+Wire Wire Line
+	4500 4200 4500 4250
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5F893666
+P 7650 3800
+F 0 "J1" H 7730 3792 50  0000 L CNN
+F 1 "Conn_01x06" H 7730 3701 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 7650 3800 50  0001 C CNN
+F 3 "~" H 7650 3800 50  0001 C CNN
+	1    7650 3800
+	1    0    0    -1  
+$EndComp
+Text Label 5300 3550 2    50   ~ 0
+can_tx
+Text Label 5300 3650 2    50   ~ 0
+can_rx
+Text Label 7450 4000 2    50   ~ 0
+can_tx
+Text Label 7450 4100 2    50   ~ 0
+can_rx
+$EndSCHEMATC
