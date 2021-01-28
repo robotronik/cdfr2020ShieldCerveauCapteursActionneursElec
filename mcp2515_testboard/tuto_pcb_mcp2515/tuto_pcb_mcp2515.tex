@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[oldvoltagedirection]{circuitikz}
+\usepackage[margin=1cm]{geometry}
+\title{Explications de la PCB - MCP vingt-cinq \emph{quinze}}
+\author{Henryann P}
+\begin{document}
+\maketitle
+Cette PCB est destinée à la Jetson opérée par Cristianon Merio pour la 2021. Elle doit permettre de générer le signal CAN à partir des données de la Jetson, car celle-ci ne dispose pas de ce dispositif intégrée, contrairement aux F4. Ce module MCP2515 fonctionne nécéssaire avec le module MCP vingt-cinq \emph{cinquante et un}, disponible sur la même branche git.\\ 
+
+Ce module permet à la Jetson de générer un signal CAN nécessitant d'être au même nombre de Mbauds que celui des F4. Voir la section 5.5 p43 de la datasheet mcp2515. Si les horloges ne sont pas à la même fréquence, il est nécessaire de modifier un certain paramètre BRP, dont je n'ai pas bien compris la mise en place.\\
+
+Pour la PCB j'ai suivi le tuto placé par Cristiano dans le répertoire git jetson-mcp2515. Les choix de conceptions sont :\\
+- pas de génération d'horloge par quartz, on utilisera celle de la Jetson pour obtenir le même bitrate que les F4.\\
+- pour simplifier légèrement le code, le délai sur le reset est DEJA IMPLÉMENTÉ sur la pcb, cf section 9 de la datasheet.\\
+- sans plus de spécifications dans le cahier des charges, tous les pins optionnels ne sont pas utilisés et seront directement envoyés en sortie pour le débogage. Aucune d'entre eux ne semblent contrôler le BRP, stocké dans le registre d'adresse 2A (voir table de registre en fin de datasheet).\\
+\begin{center}
+\begin{circuitikz}
+  \draw (0,0)
+  to[R=$R_{DD}$] (0,2)
+  to[short] (0,2.5)
+  node[] {+5V} (0,3);
+  %\draw (0,2.5)
+  %node[] {+5V} (0,2.5)
+  %to[i=$i_{DD}$, R=$R_{DD}$] (0,0);
+  \draw (0,1.65)
+  to[short, i=$i_{DD}$] (0,2.5);
+  \draw (0,0)
+  to[C=$C$, i=$i_c$] (0,-2)
+  node[ground] {} (0,-2);
+  \draw (0,0)
+  to[short] (-2,0)
+  to[D=$D$, i=$i_D$] (-2,2)
+  to[short] (-2,2.5)
+  node[] {+5V} (-2,2.5);
+  \draw (0,0)
+  to[R=$R_R$, i=$i_R$] (2,0);
+  \draw (2,2)
+  to[short] (2,-2);
+  \draw (2.5, 0)
+  node[anchor=west] {$\overline{Reset}$};
+  \draw (0,0)
+  node[anchor=north east] {$V_0$};
+\end{circuitikz}
+\end{center}
+
+Lorsque $V_0$ passe de 0 à +5V :
+\[\left\{
+    \begin{array}{rcl}
+      i_{DD} * R_{DD} &=& 5 - V_0\\
+      i_R * R_R &=& V_{\overline{Reset}} - V_0\\
+      i_d &\approx& 0\\
+      i_c &=& C\frac{\partial V_0}{\partial t}\\
+      i_d + i_{DD} + i_c + i_R &=& 0
+  \end{array}
+\right| 
++= \frac{5-V_0}{R_{DD}} + \frac{V_{\overline{Reset}}-V_0}{R_R} + C\frac{\partial V_0}{\partial t} = 0
+\]
+
+\end{document}
+
