@@ -5,7 +5,7 @@
 \author{Henryann P}
 \begin{document}
 \maketitle
-Cette PCB est destinée à la Jetson opérée par Cristianon Merio pour la 2021. Elle doit permettre de générer le signal CAN à partir des données de la Jetson, car celle-ci ne dispose pas de ce dispositif intégrée, contrairement aux F4. Ce module MCP2515 fonctionne nécéssaire avec le module MCP vingt-cinq \emph{cinquante et un}, disponible sur la même branche git.\\ 
+Cette PCB est destinée à la Jetson opérée par Cristianon Merio pour la cdfr 2021. Elle doit permettre de générer le signal CAN à partir des données de la Jetson, car celle-ci ne dispose pas de ce dispositif intégrée, contrairement aux F4. Ce module MCP2515 fonctionne nécéssaire avec le module MCP vingt-cinq \emph{cinquante et un}, disponible sur la même branche git.\\ 
 
 Ce module permet à la Jetson de générer un signal CAN nécessitant d'être au même nombre de Mbauds que celui des F4. Voir la section 5.5 p43 de la datasheet mcp2515. Si les horloges ne sont pas à la même fréquence, il est nécessaire de modifier un certain paramètre BRP, dont je n'ai pas bien compris la mise en place.\\
 
@@ -43,18 +43,28 @@ Pour la PCB j'ai suivi le tuto placé par Cristiano dans le répertoire git jets
 \end{circuitikz}
 \end{center}
 
-Lorsque $V_0$ passe de 0 à +5V :
+Lorsque $V_0$ passe de 0 à +5V (hypothèses $V_{\overline{Reset}} \approx V_0$ et $i_D \approx 0$), on souhaite une montée de Reset au moins 2 microseconde après la montée du set.
 \[\left\{
-    \begin{array}{rcl}
-      i_{DD} * R_{DD} &=& 5 - V_0\\
-      i_R * R_R &=& V_{\overline{Reset}} - V_0\\
-      i_d &\approx& 0\\
-      i_c &=& C\frac{\partial V_0}{\partial t}\\
-      i_d + i_{DD} + i_c + i_R &=& 0
+  \begin{array}{rcl}
+    i_{DD} = \frac{V_0 - V_{DD}}{R_{DD}}\\[1em]
+    i_{R} = \frac{V_0}{R_{R}}\\[1em]
+    i_c = C\frac{\partial V_0}{\partial t}\\[1em]
+    0 = i_c + i_{DD} + i_R\\
   \end{array}
-\right| 
-+= \frac{5-V_0}{R_{DD}} + \frac{V_{\overline{Reset}}-V_0}{R_R} + C\frac{\partial V_0}{\partial t} = 0
+\right|
+\Rightarrow \frac{\partial V_0}{\partial t} + \frac{V_0}{C*R_{DD}//R_R} = \frac{V_{DD}}{C*R_{DD}}
 \]
+\[
+  V_{\overline{Reset}} \approx V_0 = V_{DD}\frac{R_R}{R_{DD}+R_R}(1 - e^{-\frac{t}{\tau}} ) \text{et} (V_0 > 0.95V_{DD} \Rightarrow \tau > -t/ln(1-0.95\frac{R_{DD}+R_R}{R_R}) )
+\]
+Donc
+\[
+  C > \frac{-2\mu \text{s}}{(R_R//R_{DD})ln(1-0.95\frac{R_{DD}+R_R}{R_R})}
+  \text{\;\;\;\;et\;\;\;\;}
+  R_R = 100R_{DD} = 10k\Omega
+\]
+On a donc $C = 6.8$nF pour la norme E12 la plus proche, $R_{DD} = 100\Omega$ et $R_R = 10$k$\Omega$.
+
 
 \end{document}
 
