@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 23
+Sheet 9 23
 Title ""
 Date ""
 Rev ""
@@ -25,9 +25,9 @@ AR Path="/5E68B65A/5E684EEF" Ref="J7"  Part="1"
 AR Path="/5E68B65F/5E684EEF" Ref="J8"  Part="1" 
 AR Path="/5E68B664/5E684EEF" Ref="J9"  Part="1" 
 AR Path="/5E68B669/5E684EEF" Ref="J10"  Part="1" 
-F 0 "J10" H 5330 3492 50  0000 L CNN
+F 0 "J9" H 5330 3492 50  0000 L CNN
 F 1 "ToF" H 5330 3401 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical" H 5250 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 5250 3450 50  0001 C CNN
 F 3 "~" H 5250 3450 50  0001 C CNN
 	1    5250 3450
 	1    0    0    -1  
